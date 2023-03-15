@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kancharla Anil</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat&family=Lexend:wght@500&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
@@ -22,7 +24,7 @@
                 <li><a class="nav-link home" href="#">Home</a></li>
                 <li><a class="nav-link about" href="#">About Me</a></li>
                 <li><a class="nav-link skills" href="#">Skills</a></li>
-                <li><a class="nav-link projects" href="#">Project</a></li>
+                <li><a class="nav-link projects" href="#projects">Project</a></li>
                 <li><a class="nav-link contact" href="#">Contact</a></li>
             </ul>
             <ul>
@@ -38,19 +40,20 @@
         </div>
     </div>
     <div id="projects">
-        <h1>My Projects</h1>
+        <h1>Performance beats promises.</h1>
+        <p>If you need help <span>vizualizing your creative ideas</span> with user-friendly website development and web
+            design, <br> look to my specilization in backend and full stack developement</p>
         <!-- each project card -->
+        <br>
         <div class="project-card">
-            <div>
+            <div class="project-info">
                 <h3 class="project-title">Chick-fil-A clone</h3>
                 <p class="project-description">Chick-n-Fry is a fast-food restaurant chain known for its chicken
                     sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and
                     delicious meals.</p>
                 <p class="project-tech-stack"></p>
-                <a class="project-github-link" href="">github
-                    <link rel="stylesheet" href="">
-                </a> <br>
-                <a class="project-deployed-link" href="">deployed link</a>
+                <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988">Source code</a> <br> <br>
+                <a class="project-deployed-link" href="">Live here</a>
             </div>
             <div id="project-image-coursel">
                 <div class="swiper">
@@ -59,10 +62,7 @@
                             <img src="index.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img src="products.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="cart.png" alt="">
+                            <img src="menu.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
             autoplayDisableOnInteraction: true,
             effect: 'slide',
             autoplay: {
-                delay: 9000
+                delay: 5000
             }
         });
     </script>
