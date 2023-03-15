@@ -2,18 +2,33 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
 
-span{
+button{
+    background-color: #E85A4F;
+    border: none;
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    width: 100px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+span {
     color: #E85A4F;
 }
 
 ul>li>a {
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+    font-weight: 900;
 }
 
 ul {
@@ -26,6 +41,12 @@ nav {
     justify-content: space-around;
     position: fixed;
     width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: 999;
+}
+
+.nav-scroll {
+    background-color: #E85A4F;
 }
 
 nav>ul:nth-child(2) {
@@ -105,10 +126,11 @@ nav>ul:nth-child(3)>li>a {
 
 /* project swiper */
 .swiper {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     width: 500px;
-    height: 544px;
+    height: 560px;
     transition: width 0.3s ease-out, height 0.3s ease-out;
+    box-shadow: -1px 0px 3px -1px rgb(125, 124, 124);
 }
 
 .swiper-slide>img {
@@ -117,14 +139,13 @@ nav>ul:nth-child(3)>li>a {
     object-fit: cover;
     transition: width 0.3s ease-out, height 0.3s ease-out;
     cursor: pointer;
-    
 }
 
 .swiper:hover .swiper-slide>img {
     height: auto;
     width: 100%;
     transition: width 0.3s ease-out, height 0.3s ease-out;
-    
+
 }
 
 .swiper:hover {
@@ -145,30 +166,68 @@ nav>ul:nth-child(3)>li>a {
     /* padding: 2rem; */
 }
 
-.project-info{
+.project-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.project-info {
     padding: 20px;
     transition: width 0.3s ease-out, height 0.3s ease-out;
 }
 
 .project-description {
-    font-family: 'Caveat', cursive;
-    font-size: 25px;
+    font-family: 'Lexend', sans-serif;
 }
 
 
-#projects>h1{
+#projects>h1,
+#skills>h1,
+#contact>h1 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
+    margin-bottom: 0px;
 }
-#projects>p{
+
+#projects>p,
+#skills>p,
+#contact>p {
     text-align: center;
     font-family: 'Lexend', sans-serif;
     font-size: larger;
+    margin-bottom: 50px;
 }
 
-.project-info>a{
+.project-info>a {
     font-family: 'Lexend', sans-serif;
     color: #E85A4F;
     font-size: larger;
+}
+
+/* skills */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    gap: 3rem;
+}
+
+.skill-card {
+    text-align: center;
+    margin: 10px;
+}
+
+.skills-card-img {
+    width: 100px;
+    height: 100px;
+}
+
+.skills-card-name {
+    margin-top: 10px;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bolder;
 }
