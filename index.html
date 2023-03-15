@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kancharla Anil</title>
     <link rel="stylesheet" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Ubuntu:wght@700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <li><a class="nav-link contact" href="#">Contact</a></li>
             </ul>
             <ul>
-                <li><a class="nav-link resume" href="#">Resume</a></li>
+                <button class="nav-link resume">Resume</button>
             </ul>
         </nav>
         <div id="about" class="about-section">
@@ -33,18 +34,39 @@
             <div id="user-detail-name">Anil Reddy</div>
             <div id="user-detail-intro">My passion for software lies with dreaming up ideas and <br> making them come
                 true with elegant interfaces.</div>
-            <a id="resume-button-2" href="">Resume</a>
+            <button id="resume-button-2">Resume</button>
         </div>
     </div>
     <div id="projects">
+        <h1>My Projects</h1>
         <!-- each project card -->
         <div class="project-card">
-            <img src="" alt="">
-            <h1 class="project-title"></h1>
-            <p class="project-description"></p>
-            <p class="project-tech-stack"></p>
-            <p class="project-github-link">link to github</p>
-            <a class="project-deployed-link" href="">deployed link</a>
+            <div>
+                <h3 class="project-title">Chick-fil-A clone</h3>
+                <p class="project-description">Chick-n-Fry is a fast-food restaurant chain known for its chicken
+                    sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and
+                    delicious meals.</p>
+                <p class="project-tech-stack"></p>
+                <a class="project-github-link" href="">github
+                    <link rel="stylesheet" href="">
+                </a> <br>
+                <a class="project-deployed-link" href="">deployed link</a>
+            </div>
+            <div id="project-image-coursel">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="index.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="products.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="skills">
@@ -58,6 +80,16 @@
         <a id="contact-linkedin" href=""></a>
         <a id="contact-email" href=""></a>
     </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplayDisableOnInteraction: true,
+            effect: 'slide',
+            autoplay: {
+                delay: 9000
+            }
+        });
+    </script>
 </body>
 
 </html>
