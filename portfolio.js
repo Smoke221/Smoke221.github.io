@@ -11,12 +11,15 @@ const swiper = new Swiper('.swiper', {
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('nav');
     var spanElement = document.querySelector('span')
+    var navResume = document.querySelector('#nav-resume')
     if (window.scrollY > 100) {
         navbar.classList.add('nav-scroll');
         spanElement.style.color = 'white'
+        navResume.style.border = '2px solid white'
     } else {
         navbar.classList.remove('nav-scroll');
-        spanElement.style.color = '#E85A4F'
+        spanElement.style.color = '#b23850'
+        navResume.style.border = 'none'
     }
 });
 

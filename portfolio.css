@@ -11,7 +11,7 @@ a {
 }
 
 button {
-    background-color: #E85A4F;
+    background-color: #b23850;
     border: none;
     color: white;
     font-family: 'Lexend', sans-serif;
@@ -21,7 +21,7 @@ button {
 }
 
 span {
-    color: #E85A4F;
+    color: #b23850;
 }
 
 ul>li>a {
@@ -40,13 +40,17 @@ nav {
     align-items: center;
     justify-content: space-around;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
+    height: 65px;
     transition: background-color 0.5s ease;
     z-index: 999;
 }
 
 .nav-scroll {
-    background-color: #E85A4F;
+    background-color: #b23850;
 }
 
 nav>ul:nth-child(2) {
@@ -57,7 +61,7 @@ nav>ul:nth-child(2) {
 }
 
 nav>ul:nth-child(3)>li>a {
-    color: #E85A4F;
+    color: #b23850;
     font-size: 20px;
 }
 /* #nav-menu{
@@ -68,21 +72,21 @@ nav>ul:nth-child(3)>li>a {
 #nav-name {
     font-size: 30px;
     font-weight: bolder;
-    /* box-shadow: inset 0 0 0 0 #E85A4F; */
+    /* box-shadow: inset 0 0 0 0 #b23850; */
     /* transition: color .3s ease-out-in-out, box-shadow .3s ease-out-in-out; */
 }
 
 /* #nav-name:hover{
     box-shadow: inset 150px 0 0 0 white;
-    color: #E85A4F;
+    color: #b23850;
 }
 #nav-name span:hover{
-    box-shadow: inset 150px 0 0 0 #E85A4F;
+    box-shadow: inset 150px 0 0 0 #b23850;
     color: white;
 } */
 #nav-name span {
     box-shadow: inset 0 0 0 0 white;
-    color: #E85A4F;
+    color: #b23850;
 }
 
 #home {
@@ -118,7 +122,7 @@ nav>ul:nth-child(3)>li>a {
 #name {
     font-size: 90px;
     font-family: 'Ubuntu', sans-serif;
-    color: #E85A4F;
+    color: #b23850;
     margin-bottom: -30px;
 }
 
@@ -143,7 +147,7 @@ nav>ul:nth-child(3)>li>a {
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: #E85A4F;
+    background-color: #b23850;
     transition: width 1s ease-in-out;
 }
 
@@ -223,7 +227,8 @@ nav>ul:nth-child(3)>li>a {
 #projects>p,
 #skills>p,
 #contact>p,
-#user-detail-intro{
+#user-detail-intro,
+#contact-container{
     text-align: center;
     font-family: 'Lexend', sans-serif;
     font-size: larger;
@@ -232,7 +237,7 @@ nav>ul:nth-child(3)>li>a {
 
 .project-info>a {
     font-family: 'Lexend', sans-serif;
-    color: #E85A4F;
+    color: #b23850;
     font-size: larger;
 }
 
@@ -246,7 +251,7 @@ nav>ul:nth-child(3)>li>a {
     gap: 3rem;
 }
 
-.skill-card {
+.skills-card {
     text-align: center;
     margin: 10px;
 }
@@ -260,4 +265,21 @@ nav>ul:nth-child(3)>li>a {
     margin-top: 10px;
     font-family: 'Lexend', sans-serif;
     font-weight: bolder;
+}
+
+
+
+/* footer */
+footer{
+    background-color: black;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Lexend', sans-serif;
+    font-size: 18px;
+}
+footer>span,footer>span>a+span{
+    color: white;
+}
+#footer-name{
+    color: #b23850;
 }
