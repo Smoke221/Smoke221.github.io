@@ -10,7 +10,7 @@ a {
     text-decoration: none;
 }
 
-button{
+button {
     background-color: #E85A4F;
     border: none;
     color: white;
@@ -60,6 +60,10 @@ nav>ul:nth-child(3)>li>a {
     color: #E85A4F;
     font-size: 20px;
 }
+/* #nav-menu{
+    width: 100%;
+    overflow-wrap: normal;
+} */
 
 #nav-name {
     font-size: 30px;
@@ -83,7 +87,6 @@ nav>ul:nth-child(3)>li>a {
 
 #home {
     position: relative;
-    /* background-image: url(./bg2.webp); */
     height: 100vh;
 }
 
@@ -99,30 +102,54 @@ nav>ul:nth-child(3)>li>a {
     z-index: -1;
 }
 
-#about {
+#home-about {
     position: relative;
-    left: 30%;
+    left: 25%;
     top: 30%;
+    width: 60%;
 }
 
-#about>div:nth-child(1) {
+#home-about>div:nth-child(1) {
     font-family: 'Ubuntu', sans-serif;
     color: white;
     font-size: 30px;
 }
 
-#about>div:nth-child(3) {
-    font-family: 'Lexend', sans-serif;
-    color: white;
-    font-size: 17px;
-}
-
-#user-detail-name {
+#name {
     font-size: 90px;
     font-family: 'Ubuntu', sans-serif;
     color: #E85A4F;
+    margin-bottom: -30px;
 }
 
+#name+p{
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+#name+p+a {
+    font-family: 'Lexend', sans-serif;
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#name+p+a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E85A4F;
+    transition: width 1s ease-in-out;
+}
+
+#name+p+a:hover::after {
+    width: 100%;
+}
 
 /* project swiper */
 .swiper {
@@ -158,6 +185,7 @@ nav>ul:nth-child(3)>li>a {
 .project-card {
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     width: 60%;
@@ -184,7 +212,8 @@ nav>ul:nth-child(3)>li>a {
 
 #projects>h1,
 #skills>h1,
-#contact>h1 {
+#contact>h1,
+#about>h1 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
@@ -193,7 +222,8 @@ nav>ul:nth-child(3)>li>a {
 
 #projects>p,
 #skills>p,
-#contact>p {
+#contact>p,
+#user-detail-intro{
     text-align: center;
     font-family: 'Lexend', sans-serif;
     font-size: larger;

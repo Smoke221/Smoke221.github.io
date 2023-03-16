@@ -30,13 +30,20 @@
                 <button class="nav-link resume">Resume</button>
             </ul>
         </nav>
-        <div id="about" class="about-section">
-            <div>Hello, my name is</div>
-            <div id="user-detail-name">Anil Reddy</div>
-            <div id="user-detail-intro">My passion for software lies with dreaming up ideas and <br> making them come
-                true with elegant interfaces.</div>
-            <button id="resume-button-2">Resume</button>
+        <div id="home-about">
+            <div>Welcome, I'm</div>
+            <div id="name">Anil Reddy</div>
+            <p>I specialize in full stack web development</p>
+            <a href="#contact">Let's make something amazing</a>
         </div>
+    </div>
+    <div id="about" class="about-section">
+        <h1>Know me</h1>
+        <div>Hello, my name is</div>
+        <div id="user-detail-name">Anil Reddy</div>
+        <div id="user-detail-intro">My passion for software lies with dreaming up ideas and <br> making them come
+            true with elegant interfaces.</div>
+        <button id="resume-button-2">Resume</button>
     </div>
     <div id="projects">
         <h1>Performance beats promises.</h1>
@@ -51,9 +58,10 @@
                     sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and
                     delicious meals.</p>
                 <p class="project-tech-stack"></p>
-                <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988">Source code</a>
+                <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988"
+                    target="_blank">Source code</a>
                 <br> <br>
-                <a class="project-deployed-link" href="">Live here</a>
+                <a class="project-deployed-link" href="" target="_blank">Live here</a>
             </div>
             <div id="project-image-coursel">
                 <div class="swiper">
@@ -71,7 +79,7 @@
     </div>
     <div id="skills">
         <h1>Skills</h1>
-        <p>Bringing ideas to life with my skills</p>
+        <p>Bringing ideas to life with these tools</p>
         <div id="container">
             <div class="skill-card">
                 <img class="skills-card-img" src="./html-5.svg" alt="">
@@ -90,6 +98,10 @@
                 <h2 class="skills-card-name">NODE JS</h2>
             </div>
             <div class="skill-card">
+                <img class="skills-card-img" src="./vscode.png" alt="">
+                <h2 class="skills-card-name">VS CODE</h2>
+            </div>
+            <div class="skill-card">
                 <img class="skills-card-img" src="./expressj.svg" alt="">
                 <h2 class="skills-card-name">EXPRESS JS</h2>
             </div>
@@ -106,10 +118,10 @@
     <div id="contact">
         <h1>Connect</h1>
         <p>Don't be a stranger</p>
-         
+
         <div id="contact-container">
-            I am actively seeking to join a team of talented developers. 
-            If you believe that we would work well together, 
+            I am actively seeking to join a team of talented developers.
+            If you believe that we would work well together,
             please don't hesitate to contact me via phone 🇮🇳 or email.
         </div>
 
@@ -117,40 +129,6 @@
         <a id="contact-linkedin" href=""></a>
         <a id="contact-email" href=""></a>
     </div>
-    <script>
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            autoplayDisableOnInteraction: true,
-            effect: 'slide',
-            autoplay: {
-                delay: 5000
-            }
-        });
-
-
-        window.addEventListener('scroll', function () {
-            var navbar = document.querySelector('nav');
-            var spanElement = document.querySelector('span')
-            if (window.scrollY > 100) {
-                navbar.classList.add('nav-scroll');
-                spanElement.style.color = 'white'
-            } else {
-                navbar.classList.remove('nav-scroll');
-                spanElement.style.color = '#E85A4F'
-            }
-        });
-
-
-        $('a[href^="#"]').on('click', function (event) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1000);
-            }
-        });
-    </script>
 </body>
-
 </html>
+<script src="portfolio.js"></script>
