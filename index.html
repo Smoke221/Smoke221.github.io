@@ -27,7 +27,7 @@
                 <li><a class="nav-link contact" href="#contact">Contact</a></li>
             </ul>
             <ul>
-                <button id="nav-resume" class="nav-link resume">Resume</button>
+                <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button>
             </ul>
         </nav>
         <div id="home-about">
@@ -43,9 +43,12 @@
         <div id="user-detail-name">Anil Reddy</div>
         <div id="user-detail-intro">My passion for software lies with dreaming up ideas and <br> making them come
             true with elegant interfaces.</div>
-        <button id="resume-button-2">Resume</button>
+        <button id="resume-button-2" onclick="downloadResume()" >Resume</button>
     </div>
     <div id="projects">
+        <!-- <video autoplay muted loop id="myVideo">
+            <source src="./1678134221405733.MP4" type="video/mp4">
+        </video> -->
         <h1>Performance beats promises.</h1>
         <p>If you need help <span>vizualizing your creative ideas</span> with user-friendly website development and web
             design, <br> look to my specilization in backend and full stack developement</p>
@@ -61,7 +64,8 @@
                 <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988"
                     target="_blank">Source code</a>
                 <br> <br>
-                <a class="project-deployed-link" href="https://timely-parfait-491bed.netlify.app/" target="_blank">Live here</a>
+                <a class="project-deployed-link" href="https://timely-parfait-491bed.netlify.app/" target="_blank">Live
+                    here</a>
             </div>
             <div id="project-image-coursel">
                 <div class="swiper">
@@ -75,11 +79,38 @@
                     </div>
                 </div>
             </div>
+        </div> <br> <br>
+        <div class="project-card">
+            <div class="project-info">
+                <h3 class="project-title">Crystaline</h3>
+                <p class="project-description">Crystaline is a jewelry e-commerce website.</p>
+                <p class="project-tech-stack"></p>
+                <a class="project-github-link" href="https://github.com/Rubel011/dead-rail-6352" target="_blank">Source
+                    code</a>
+                <br> <br>
+                <a class="project-deployed-link" href="https://musical-youtiao-14aa59.netlify.app/" target="_blank">Live
+                    here</a>
+            </div>
+            <div id="project-image-coursel">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="index-2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="rings.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="earrings.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div id="skills">
         <h1>Skills</h1>
-        <p>Bringing ideas to life with these tools</p>
+        <p>Bringing <span>ideas to life</span> with these tools</p>
         <div id="container">
             <div class="skills-card">
                 <img class="skills-card-img" src="./html-5.svg" alt="">
@@ -131,12 +162,13 @@
     </div>
     <footer>
         <span>
-            Created By 
+            Created By
             <a id="footer-name" href="#home">Anil</a>
             <span>&copy;</span>
             2023 All rights reserved.
         </span>
     </footer>
 </body>
+
 </html>
 <script src="portfolio.js"></script>

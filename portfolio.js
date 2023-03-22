@@ -62,3 +62,19 @@ links.forEach(function (link) {
         smoothScroll(target, duration);
     });
 });
+
+
+//download the resume
+
+function downloadResume() {
+    var filename = "Kancharla-Anil-Resume.pdf";
+    var file = "./Kancharla-Anil-Resume.pdf";
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file));
+    element.setAttribute('download', filename);
+    element.setAttribute('target', '_blank');
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  }
