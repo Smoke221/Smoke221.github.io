@@ -63,8 +63,6 @@ links.forEach(function (link) {
     });
 });
 
-
-
 //download the resume
 
 // function downloadResume() {
