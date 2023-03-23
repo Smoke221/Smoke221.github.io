@@ -27,7 +27,11 @@
                 <li><a class="nav-link contact" href="#contact">Contact</a></li>
             </ul>
             <ul>
-                <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button>
+                <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
+                <a id="resume-link-1" class="nav-link resume"
+                    href="https://drive.google.com/file/d/19teR_13-9oGQEpOqhdjCAKK6bubKJcw3/view?usp=sharing"
+                    target="_blank" download>Resume</a>
+
             </ul>
         </nav>
         <div id="home-about">
@@ -37,13 +41,23 @@
             <a href="#contact">Let's make something amazing</a>
         </div>
     </div>
-    <div id="about" class="about-section">
+    <div id="about" class="about section">
         <h1>Know me</h1>
-        <div>Hello, my name is</div>
-        <div id="user-detail-name">Anil Reddy</div>
-        <div id="user-detail-intro">My passion for software lies with dreaming up ideas and <br> making them come
-            true with elegant interfaces.</div>
-        <button id="resume-button-2" onclick="downloadResume()" >Resume</button>
+        <p><span>See</span> for yourself</p>
+        <div id="about-container">
+            <img src="./image0[175].jpeg" alt="">
+            <div id="about-info">
+                <p id="user-detail-name">I'm Anil Reddy</p>
+                <p id="user-detail-intro">My passion for software development lies in conceptualizing innovative ideas
+                    and bringing them to life with sophisticated user interfaces, leveraging cutting-edge technologies
+                    to achieve seamless user experiences.</p>
+                <!-- <button id="resume-button-2" onclick="downloadResume()" >Resume</button> -->
+                <a id="resume-link-2"
+                    href="https://drive.google.com/file/d/19teR_13-9oGQEpOqhdjCAKK6bubKJcw3/view?usp=sharing"
+                    target="_blank" download>Resume</a>
+            </div>
+        </div>
+
     </div>
     <div id="projects">
         <!-- <video autoplay muted loop id="myVideo">
@@ -60,7 +74,13 @@
                 <p class="project-description">Chick-n-Fry is a fast-food restaurant chain known for its chicken
                     sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and
                     delicious meals.</p>
-                <p class="project-tech-stack"></p>
+                <div class="project-tech-stack">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>ExpressJS</p>
+                    <p>MongoDB</p>
+                </div>
                 <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988"
                     target="_blank">Source code</a>
                 <br> <br>
@@ -84,7 +104,11 @@
             <div class="project-info">
                 <h3 class="project-title">Crystaline</h3>
                 <p class="project-description">Crystaline is a jewelry e-commerce website.</p>
-                <p class="project-tech-stack"></p>
+                <div class="project-tech-stack">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                </div>
                 <a class="project-github-link" href="https://github.com/Rubel011/dead-rail-6352" target="_blank">Source
                     code</a>
                 <br> <br>
@@ -149,16 +173,19 @@
     <div id="contact">
         <h1>Connect</h1>
         <p>Don't be a stranger</p>
-
-        <div id="contact-container">
-            I am actively seeking to join a team of talented developers.
-            If you believe that we would work well together,
-            please don't hesitate to contact me via phone 🇮🇳 or email.
+        <div>
+            <div>
+                <a id="contact-github" href="https://github.com/Smoke221">Anil Reddy</a>
+                <a id="contact-linkedin" href="https://www.linkedin.com/in/anil-reddy-b2a364169/">Kancharla Anil</a>
+                <a id="contact-phone" href="">+91 7995125254</a>
+                <a id="contact-email" href="">kanilreddy867@gmail.com</a>
+            </div>
+            <div id="contact-container">
+                I am actively seeking to join a team of talented developers.
+                If you believe that we would work well together,
+                please don't hesitate to contact me via phone 🇮🇳 or email.
+            </div>
         </div>
-
-        <a id="contact-github" href=""></a>
-        <a id="contact-linkedin" href=""></a>
-        <a id="contact-email" href=""></a>
     </div>
     <footer>
         <span>

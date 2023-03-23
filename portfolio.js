@@ -11,7 +11,7 @@ const swiper = new Swiper('.swiper', {
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('nav');
     var spanElement = document.querySelector('span')
-    var navResume = document.querySelector('#nav-resume')
+    var navResume = document.querySelector('#resume-link-1')
     if (window.scrollY > 100) {
         navbar.classList.add('nav-scroll');
         spanElement.style.color = 'white'
@@ -64,17 +64,18 @@ links.forEach(function (link) {
 });
 
 
+
 //download the resume
 
-function downloadResume() {
-    var filename = "Kancharla-Anil-Resume.pdf";
-    var file = "./Kancharla-Anil-Resume.pdf";
-    var element = document.createElement('a');
-    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file));
-    element.setAttribute('download', filename);
-    element.setAttribute('target', '_blank');
-    element.style.display = 'none';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-  }
+// function downloadResume() {
+//     var filename = "Kancharla-Anil-Resume.pdf";
+//     var file = "./Kancharla-Anil-Resume.pdf";
+//     var element = document.createElement('a');
+//     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(file));
+//     element.setAttribute('download', filename);
+//     element.setAttribute('target', '_blank');
+//     element.style.display = 'none';
+//     document.body.appendChild(element);
+//     element.click();
+//     document.body.removeChild(element);
+// }
