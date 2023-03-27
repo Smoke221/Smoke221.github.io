@@ -185,14 +185,12 @@ nav>ul:nth-child(3)>li>a {
     height: auto;
     width: 100%;
     transition: width 0.3s ease-out, height 0.3s ease-out;
-
 }
 
 .swiper:hover {
     width: 900px;
     transition: width 0.3s ease-out, height 0.3s ease-out;
 }
-
 
 /* project */
 /* #projects{
@@ -243,7 +241,7 @@ nav>ul:nth-child(3)>li>a {
     font-family: 'Lexend', sans-serif;
     padding: 0.3rem;
     border-radius: 50px;
-    font-size:x-small;
+    font-size: x-small;
 }
 
 #projects>h1,
@@ -298,6 +296,14 @@ nav>ul:nth-child(3)>li>a {
     margin-top: 10px;
     font-family: 'Lexend', sans-serif;
     font-weight: bolder;
+}
+
+#container-contact{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    margin: auto;
 }
 
 
