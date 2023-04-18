@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;500&family=Ubuntu:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
@@ -52,7 +53,7 @@
                     to achieve seamless user experiences.</p> -->
                 <p id="user-detail-intro">My expertise in full-stack web development involves designing and implementing
                     innovative concepts using Node Js, Express, coupled with advanced database
-                    management and scalable API integrations, resulting in seamless user experiences.</p>
+                    management, excellent grip on JavaScript and scalable API integrations, resulting in seamless user experiences.</p>
                 <a id="resume-button-2" href="./Kancharla-Anil-Resume.pdf" target="_blank"
                     download="Kancharla-Anil-resume">Resume</a>
             </div>
@@ -200,10 +201,19 @@
             </div>
         </div>
     </div>
-    <div>
-        <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true" />
-        <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact" alt="">
-        <img id="github-streak-stats" src="https://streak-stats.demolab.com/?user=Smoke221&theme=defaulthttps://git.io/streak-stats" alt="">
+    <div class="github">
+        <h1>Github Activity</h1>
+        <div id="github">
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true" />
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact" alt="">
+            <img id="github-streak-stats" src="https://streak-stats.demolab.com/?user=Smoke221&theme=default" alt="">
+            <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+            </div>
+        </div>
     </div>
     <div id="contact">
         <h1>Connect</h1>
@@ -245,4 +255,5 @@
 </body>
 
 </html>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script src="portfolio.js"></script>

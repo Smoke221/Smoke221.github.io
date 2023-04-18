@@ -62,3 +62,5 @@ links.forEach(function (link) {
         smoothScroll(target, duration);
     });
 });
+
+GitHubCalendar(".calendar", "Smoke221");

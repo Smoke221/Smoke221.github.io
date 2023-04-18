@@ -266,7 +266,8 @@ nav>ul:nth-child(3)>li>a {
 #projects>h1,
 #skills>h1,
 #contact>h1,
-#about>h1 {
+#about>h1,
+.github>h1 {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
@@ -361,7 +362,15 @@ nav>ul:nth-child(3)>li>a {
     color: #b23850;
 }
 
-
+/* Github Stats */
+#github{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
 
 /* footer */
 footer {
