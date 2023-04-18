@@ -169,7 +169,7 @@ nav>ul:nth-child(3)>li>a {
     /* margin-top: 1rem; */
     width: 500px;
     height: 560px;
-    transition: width 0.3s ease-out, height 0.3s ease-out;
+    transition: transform 2s, filter 2s, width 0.5s ease-in-out;
     box-shadow: -1px 0px 3px -1px rgb(125, 124, 124);
 }
 
@@ -177,19 +177,22 @@ nav>ul:nth-child(3)>li>a {
     width: 500px;
     height: auto;
     object-fit: cover;
-    transition: width 0.3s ease-out, height 0.3s ease-out;
+    transition: transform 2s, filter 2s, width 0.5s ease-in-out;
+
     cursor: pointer;
 }
 
 .swiper:hover .swiper-slide>img {
     height: auto;
     width: 100%;
-    transition: width 0.3s ease-out, height 0.3s ease-out;
+    transition: transform 2s, filter 2s, width 0.5s ease-in-out;
+    
 }
 
 .swiper:hover {
     width: 900px;
-    transition: width 0.3s ease-out, height 0.3s ease-out;
+    transition: transform 2s, filter 2s, width 0.5s ease-in-out;
+
 }
 
 /* project */
@@ -214,15 +217,14 @@ nav>ul:nth-child(3)>li>a {
 }
 
 .project-card {
-    box-shadow: #b23850 0px 1px 0px, #b23850 0px 0px 8px;
+    /* box-shadow: #b23850 0px 1px 0px, #b23850 0px 0px 8px; */
+    border: 1px solid wheat;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     width: 60%;
     height: 60vh;
     margin: auto;
-    /* padding: 2rem; */
 }
 
 .project-title {
@@ -233,7 +235,8 @@ nav>ul:nth-child(3)>li>a {
 
 .project-info {
     padding: 20px;
-    transition: width 0.3s ease-out, height 0.3s ease-out;
+    /* transition: width 0.3s ease-out, height 0.3s ease-out; */
+    transition: transform 2s, filter 2s ease-in-out;
     text-align: justify;
 }
 
