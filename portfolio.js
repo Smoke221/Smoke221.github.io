@@ -63,4 +63,4 @@ links.forEach(function (link) {
     });
 });
 
-GitHubCalendar(".calendar", "Smoke221");
+GitHubCalendar(".react-activity-calendar", "Smoke221");
