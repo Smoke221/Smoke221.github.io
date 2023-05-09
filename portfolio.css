@@ -495,3 +495,7 @@ footer>span>a+span {
         grid-template-columns: auto repeat(1,1fr);
     }
 }
+
+#resume-button-2>a{
+    color: white;
+}
