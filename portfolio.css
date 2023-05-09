@@ -218,7 +218,6 @@ nav>ul:nth-child(3)>li>a {
 
 .project-card {
     /* box-shadow: #b23850 0px 1px 0px, #b23850 0px 0px 8px; */
-    border: 1px solid wheat;
     display: flex;
     justify-content: space-between;
     align-items: center;
