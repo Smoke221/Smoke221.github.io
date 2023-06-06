@@ -17,10 +17,16 @@
 <body>
     <div id="home">
         <nav id="nav-menu">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
             <ul>
                 <li><a id="nav-name" href="#home"><span>Ka</span>ncharla</a></li>
             </ul>
-            <ul>
+            <ul class="nav-menu-items">
                 <li><a class="nav-link home" href="#home">Home</a></li>
                 <li><a class="nav-link about" href="#about">About Me</a></li>
                 <li><a class="nav-link projects" href="#projects">Project</a></li>
@@ -29,9 +35,7 @@
             </ul>
             <ul>
                 <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
-                <a id="resume-button-1" class="nav-link resume" href="./Kancharla-Anil-Resume.pdf" target="_blank"
-                    download="Kancharla-Anil-resume">Resume</a>
-
+                <button id="resume-button-1" class="nav-link resume" onclick="downloadResume()">Resume</button>
             </ul>
         </nav>
         <div id="home-about">
@@ -53,9 +57,9 @@
                     to achieve seamless user experiences.</p> -->
                 <p id="user-detail-intro">My expertise in full-stack web development involves designing and implementing
                     innovative concepts using Node Js, Express, coupled with advanced database
-                    management, excellent grip on JavaScript and scalable API integrations, resulting in seamless user experiences.</p>
-                <a id="resume-button-2" href="./Kancharla-Anil-Resume.pdf" target="_blank"
-                    download="Kancharla-Anil-resume">Resume</a>
+                    management, excellent grip on JavaScript and scalable API integrations, resulting in seamless user
+                    experiences.</p>
+                <button id="resume-button-2" onclick="downloadResume()">Resume</button>
             </div>
         </div>
 
@@ -101,7 +105,8 @@
         <div class="project-card">
             <div class="project-info">
                 <h3 class="project-title">Book My Shoot</h3>
-                <p class="project-description">A photographer booking system allows logged-in users to book a shoot with their desired photographer.
+                <p class="project-description">A photographer booking system allows logged-in users to book a shoot with
+                    their desired photographer.
                     Enthusiastic and professional photographers can apply to become photographers on our website.</p>
                 <div class="project-tech-stack">
                     <p>HTML</p>

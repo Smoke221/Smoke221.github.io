@@ -64,3 +64,14 @@ links.forEach(function (link) {
 });
 
 GitHubCalendar(".react-activity-calendar", "Smoke221");
+
+function downloadResume() {
+    var link = document.createElement('a');
+    link.setAttribute('download', 'Kancharla-Anil-resume.pdf');
+    link.href = "https://drive.google.com/file/d/1kz_dIzqBN54y90HuqVGJuzLR-xpHSdnO/view?usp=sharing";
+    link.target = "_blank";
+    link.style.display = 'none';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
