@@ -10,14 +10,17 @@ const swiper = new Swiper('.swiper', {
 
 window.addEventListener('scroll', function () {
     var navbar = document.querySelector('nav');
+    var navName = document.querySelector("#nav-name")
     var spanElement = document.querySelector('span')
     var navResume = document.querySelector('#resume-button-1')
     if (window.scrollY > 100) {
         navbar.classList.add('nav-scroll');
+        navName.style.color = 'white'
         spanElement.style.color = 'white'
         navResume.style.border = '2px solid white'
     } else {
         navbar.classList.remove('nav-scroll');
+        navName.style.color = '#b23850'
         spanElement.style.color = '#b23850'
         navResume.style.border = 'none'
     }
@@ -63,7 +66,7 @@ links.forEach(function (link) {
     });
 });
 
-GitHubCalendar(".react-activity-calendar", "Smoke221");
+GitHubCalendar(".calendar", "Smoke221", { responsive: true });
 
 function downloadResume() {
     var link = document.createElement('a');

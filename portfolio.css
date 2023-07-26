@@ -388,9 +388,10 @@ footer>span>a+span {
     color: #b23850;
 }
 
-#nav-menu {
+/* #nav-menu {
     position: relative;
-}
+} */ 
+/* this is overriding the navbar to static */
 
 .nav-toggle-label {
     position: absolute;
@@ -435,7 +436,7 @@ footer>span>a+span {
         padding: 10px;
         text-align: center;
         /* opacity: 1; */
-        z-index: 999;
+        /* z-index: 999; */
         visibility: visible;
         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     }
