@@ -1,299 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kancharla Anil | Portfolio</title>
-    <link rel="icon" href="./Images/logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="portfolio.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;500&family=Ubuntu:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <link rel="icon" href="./Images/logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;500&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="home">
-        <nav id="nav-menu">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <label for="nav-toggle" class="nav-toggle-label">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <ul>
-                <li><a id="nav-name" href="#home">Kancharla</a></li>
-            </ul>
-            <ul class="nav-menu-items">
-                <li><a class="nav-link home" href="#home">Home</a></li>
-                <li><a class="nav-link about" href="#about">About Me</a></li>
-                <li><a class="nav-link projects" href="#projects">Project</a></li>
-                <li><a class="nav-link skills" href="#skills">Skills</a></li>
-                <li><a class="nav-link contact" href="#contact">Contact</a></li>
-            </ul>
-            <ul>
-                <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
-                <button id="resume-button-1" class="nav-link resume" onclick="downloadResume()">Resume</button>
-            </ul>
-        </nav>
-        <div id="home-about">
-            <div>Welcome, I'm</div>
-            <div id="name">Anil Reddy</div>
-            <p>I specialize in full stack web development</p>
-            <a href="#contact">Let's make something amazing</a>
-        </div>
-        <video id="video-background" autoplay muted loop>
-            <source src="./Images/1678134221405733.MP4" type="video/mp4">
-        </video>
+      <nav id="nav-menu">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul>
+          <li><a id="nav-name" href="#home">Kancharla</a></li>
+        </ul>
+        <ul class="nav-menu-items">
+          <li><a class="nav-link home" href="#home">Home</a></li>
+          <li><a class="nav-link about" href="#about">About Me</a></li>
+          <li><a class="nav-link projects" href="#projects">Project</a></li>
+          <li><a class="nav-link skills" href="#skills">Skills</a></li>
+          <li><a class="nav-link contact" href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
+          <button
+            id="resume-button-1"
+            class="nav-link resume"
+            onclick="downloadResume()"
+          >
+            Resume
+          </button>
+        </ul>
+      </nav>
+      <div id="home-about">
+        <div>Welcome, I'm</div>
+        <div id="name">Anil Reddy</div>
+        <p>I specialize in full stack web development</p>
+        <a href="#contact">Let's make something amazing</a>
+      </div>
+      <video id="video-background" autoplay muted loop>
+        <source src="./Images/1678134221405733.MP4" type="video/mp4" />
+      </video>
     </div>
     <div id="about" class="about section">
-        <h1>About me</h1>
-        <p><span>See</span> for yourself</p>
-        <div id="about-container" class="about section">
-            <img id="about-img" class="home-img" src="./Images/cropped.jpg" alt="">
-            <div id="about-info">
-                <img id="logo" src="./Images/logo.jpg" alt="">
-                <p id="user-detail-name">I'm Anil Reddy</p>
-                <!-- <p id="user-detail-intro">My passion for software development lies in conceptualizing innovative ideas
+      <h1>About me</h1>
+      <p><span>See</span> for yourself</p>
+      <div id="about-container" class="about section">
+        <img
+          id="about-img"
+          class="home-img"
+          src="./Images/cropped.jpg"
+          alt=""
+        />
+        <div id="about-info">
+          <img id="logo" src="./Images/logo.jpg" alt="" />
+          <p id="user-detail-name">I'm Anil Reddy</p>
+          <!-- <p id="user-detail-intro">My passion for software development lies in conceptualizing innovative ideas
                     and bringing them to life with sophisticated user interfaces, leveraging cutting-edge technologies
                     to achieve seamless user experiences.</p> -->
-                <p id="user-detail-intro">My expertise in full-stack web development involves designing and implementing
-                    innovative concepts using Node Js, Express, coupled with advanced database
-                    management, excellent grip on JavaScript and scalable API integrations, resulting in seamless user
-                    experiences.</p>
-                <button id="resume-button-2" onclick="downloadResume()">Resume</button>
-            </div>
+          <p id="user-detail-intro">
+            My expertise in full-stack web development involves designing and
+            implementing innovative concepts using Node Js, Express, coupled
+            with advanced database management, excellent grip on JavaScript and
+            scalable API integrations, resulting in seamless user experiences.
+          </p>
+          <button id="resume-button-2" onclick="downloadResume()">
+            Resume
+          </button>
         </div>
-
+      </div>
     </div>
     <div id="projects">
-        <h1>Performance beats promises.</h1>
-        <p>If you need help <span>vizualizing your creative ideas</span> with user-friendly website development and web
-            design, <br> look to my specilization in backend and full stack developement</p>
-        <!-- each project card -->
-        <br>
-        <div class="project-card">
-            <div class="project-info">
-                <h3 class="project-title">Chick-fil-A clone</h3>
-                <p class="project-description">Chick-n-Fry is a fast-food restaurant chain known for its chicken
-                    sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and
-                    delicious meals.</p>
-                <div class="project-tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>ExpressJS</p>
-                    <p>MongoDB</p>
-                </div>
-                <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988"
-                    target="_blank">Source code</a>
-                <br> <br>
-                <a class="project-deployed-link" href="https://timely-parfait-491bed.netlify.app/" target="_blank">Live
-                    here</a>
-            </div>
-            <div id="project-image-coursel">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./Images/index.png" alt="#">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./Images/menu.png" alt="#">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
-        <div class="project-card">
-            <div class="project-info">
-                <h3 class="project-title">Book My Shoot</h3>
-                <p class="project-description">A photographer booking system allows logged-in users to book a shoot with
-                    their desired photographer.
-                    Enthusiastic and professional photographers can apply to become photographers on our website.</p>
-                <div class="project-tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                    <p>Node JS</p>
-                    <p>Express JS</p>
-                    <p>Mongo DB</p>
-                    <p>Redis</p>
-                </div>
-                <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988"
-                    target="_blank">Source
-                    code</a>
-                <br> <br>
-                <a class="project-deployed-link" href="https://bucolic-pixie-2fe8a5.netlify.app/" target="_blank">Live
-                    here</a>
-            </div>
-            <div id="project-image-coursel">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./Images/index4.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./Images/page4.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
-        <div class="project-card">
-            <div class="project-info">
-                <h3 class="project-title">File Management System</h3>
-                <p class="project-description">A robust file management system to organize, store, and retrieve files efficiently</p>
-                <div class="project-tech-stack">
-                    <p>JavaScript</p>
-                    <p>Express JS</p>
-                    <p>Node JS</p>
-                    <p>React</p>
-                    <p>AWS Services</p>
-                    <p>S3 Bucket</p>
-                </div>
-                <a class="project-github-link" href="https://github.com/Smoke221/File-Management-System-Frontend"
-                    target="_blank">Source
-                    code</a>
-                <br> <br>
-                <a class="project-deployed-link" href="https://file-management-system-frontend.vercel.app/" target="_blank">Live
-                    here</a>
-            </div>
-            <div id="project-image-coursel">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./Images/Screenshot (218).png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
-        <div class="project-card">
-            <div class="project-info">
-                <h3 class="project-title">Crystaline</h3>
-                <p class="project-description">Crystaline is a jewelry e-commerce website.</p>
-                <div class="project-tech-stack">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>JavaScript</p>
-                </div>
-                <a class="project-github-link" href="https://github.com/Rubel011/dead-rail-6352" target="_blank">Source
-                    code</a>
-                <br> <br>
-                <a class="project-deployed-link" href="https://musical-youtiao-14aa59.netlify.app/" target="_blank">Live
-                    here</a>
-            </div>
-            <div id="project-image-coursel">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="./Images/index-2.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./Images/rings.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./Images/earrings.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <h1>Performance beats promises.</h1>
+      <p>
+        If you need help <span>vizualizing your creative ideas</span> with
+        user-friendly website development and web design, <br />
+        look to my specilization in backend and full stack developement
+      </p>
+      <!-- each project card -->
+      <br />
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title">
+            <span class="actual-text">&nbsp;Chick-n-Fry&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;Chick-n-Fry&nbsp;</span
+            >
+          </h3>
+          <p class="project-description">
+            Chick-n-Fry is a fast-food restaurant chain known for its chicken
+            sandwiches, waffle fries, and friendly service. Chick-n-Fry is a
+            popular choice for quick and delicious meals.
+          </p>
+          <div class="project-tech-stack">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>ExpressJS</p>
+            <p>MongoDB</p>
+          </div>
+          <a
+            class="project-github-link"
+            href="https://github.com/Smoke221/tangible-voyage-4988"
+            target="_blank"
+            >Source code</a
+          >
+          <br />
+          <br />
+          <a
+            class="project-deployed-link"
+            href="https://timely-parfait-491bed.netlify.app/"
+            target="_blank"
+            >Live here</a
+          >
         </div>
+        <div id="project-image-coursel">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Images/index.png" alt="#" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/menu.png" alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title"><span class="actual-text">&nbsp;Book My Shoot&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;Book My Shoot&nbsp;</span
+            ></h3>
+          <p class="project-description">
+            A photographer booking system allows logged-in users to book a shoot
+            with their desired photographer. Enthusiastic and professional
+            photographers can apply to become photographers on our website.
+          </p>
+          <div class="project-tech-stack">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Node JS</p>
+            <p>Express JS</p>
+            <p>Mongo DB</p>
+            <p>Redis</p>
+          </div>
+          <a
+            class="project-github-link"
+            href="https://github.com/Smoke221/tangible-voyage-4988"
+            target="_blank"
+            >Source code</a
+          >
+          <br />
+          <br />
+          <a
+            class="project-deployed-link"
+            href="https://bucolic-pixie-2fe8a5.netlify.app/"
+            target="_blank"
+            >Live here</a
+          >
+        </div>
+        <div id="project-image-coursel">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Images/index4.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/page4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title"><span class="actual-text">&nbsp;File Management System&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;File Management System&nbsp;</span
+            ></h3>
+          <p class="project-description">
+            A robust file management system to organize, store, and retrieve
+            files efficiently
+          </p>
+          <div class="project-tech-stack">
+            <p>JavaScript</p>
+            <p>Express JS</p>
+            <p>Node JS</p>
+            <p>React</p>
+            <p>AWS Services</p>
+            <p>S3 Bucket</p>
+          </div>
+          <a
+            class="project-github-link"
+            href="https://github.com/Smoke221/File-Management-System-Frontend"
+            target="_blank"
+            >Source code</a
+          >
+          <br />
+          <br />
+          <a
+            class="project-deployed-link"
+            href="https://file-management-system-frontend.vercel.app/"
+            target="_blank"
+            >Live here</a
+          >
+        </div>
+        <div id="project-image-coursel">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Images/Screenshot (218).png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="project-card">
+        <div class="project-info">
+          <h3 class="project-title"><span class="actual-text">&nbsp;Crystaline&nbsp;</span>
+            <span aria-hidden="true" class="hover-text"
+              >&nbsp;Crystaline&nbsp;</span
+            ></h3>
+          <p class="project-description">
+            Crystaline is a jewelry e-commerce website.
+          </p>
+          <div class="project-tech-stack">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+          </div>
+          <a
+            class="project-github-link"
+            href="https://github.com/Rubel011/dead-rail-6352"
+            target="_blank"
+            >Source code</a
+          >
+          <br />
+          <br />
+          <a
+            class="project-deployed-link"
+            href="https://musical-youtiao-14aa59.netlify.app/"
+            target="_blank"
+            >Live here</a
+          >
+        </div>
+        <div id="project-image-coursel">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./Images/index-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/rings.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./Images/earrings.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="skills">
-        <h1>Skills</h1>
-        <p>Bringing <span>ideas to life</span> with these tools</p>
-        <div id="container">
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/html-5.svg" alt="">
-                <h2 class="skills-card-name">HTML</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/css3.svg" alt="">
-                <h2 class="skills-card-name">CSS</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/javascript.svg" alt="">
-                <h2 class="skills-card-name">JAVASCRIPT</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/nodejs.svg" alt="">
-                <h2 class="skills-card-name">NODE JS</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/vscode.png" alt="">
-                <h2 class="skills-card-name">VS CODE</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/expressj.svg" alt="">
-                <h2 class="skills-card-name">EXPRESS JS</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/mongodb.svg" alt="">
-                <h2 class="skills-card-name">MONGO DB</h2>
-            </div>
-            <div class="skills-card">
-                <img class="skills-card-img" src="./Images/git.svg" alt="">
-                <h2 class="skills-card-name">GIT</h2>
-            </div>
+      <h1>Skills</h1>
+      <p>Bringing <span>ideas to life</span> with these tools</p>
+      <div id="container">
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/html-5.svg" alt="" />
+          <h2 class="skills-card-name">HTML</h2>
         </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/css3.svg" alt="" />
+          <h2 class="skills-card-name">CSS</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/javascript.svg" alt="" />
+          <h2 class="skills-card-name">JAVASCRIPT</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/nodejs.svg" alt="" />
+          <h2 class="skills-card-name">NODE JS</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/vscode.png" alt="" />
+          <h2 class="skills-card-name">VS CODE</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/expressj.svg" alt="" />
+          <h2 class="skills-card-name">EXPRESS JS</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/mongodb.svg" alt="" />
+          <h2 class="skills-card-name">MONGO DB</h2>
+        </div>
+        <div class="skills-card">
+          <img class="skills-card-img" src="./Images/git.svg" alt="" />
+          <h2 class="skills-card-name">GIT</h2>
+        </div>
+      </div>
     </div>
     <div class="github">
-        <h1>Github Activity</h1>
-        <div id="github">
-            <img id="github-stats-card"
-                src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true" />
-            <img id="github-top-langs"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact" alt="">
-            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Smoke221" alt="">
-            <div class="react-activity-calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-            </div>
+      <h1>Github Activity</h1>
+      <div id="github">
+        <img
+          id="github-stats-card"
+          src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true"
+        />
+        <img
+          id="github-top-langs"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact"
+          alt=""
+        />
+        <img
+          id="github-streak-stats"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=Smoke221"
+          alt=""
+        />
+        <div class="react-activity-calendar">
+          <!-- Loading stuff -->
+          Loading the data just for you.
         </div>
+      </div>
     </div>
     <div id="contact">
-        <h1>Connect</h1>
-        <p>Don't be a stranger</p>
-        <div id="container-contact">
-            <div id="main-contact">
-                <div>
-                    <img src="./Images/icons8-github.svg" alt="Github logo">
-                    <a id="contact-github" href="https://github.com/Smoke221">Anil Reddy</a>
-                </div>
-                <div>
-                    <img src="./Images/icons8-linkedin.svg" alt="">
-                    <a id="contact-linkedin" href="https://www.linkedin.com/in/anil-reddy-b2a364169/">Kancharla Anil</a>
-                </div>
-                <div>
-                    <img src="./Images/mail.svg" alt="#">
-                    <a id="contact-email" href="">kanilreddy867@gmail.com</a>
-                </div>
-                <div>
-                    <img src="./Images/phone.svg" alt="#">
-                    <a id="contact-phone" href="">+91 7995125254</a>
-                </div>
-            </div>
-            <div id="contact-info">
-                <p>I am actively seeking to join a team of talented developers.
-                    If you believe that we would work well together,
-                    please don't hesitate to contact me via phone or email.</p>
-            </div>
+      <h1>Connect</h1>
+      <p>Don't be a stranger</p>
+      <div id="container-contact">
+        <div id="main-contact">
+          <div>
+            <img src="./Images/icons8-github.svg" alt="Github logo" />
+            <a id="contact-github" href="https://github.com/Smoke221"
+              >Anil Reddy</a
+            >
+          </div>
+          <div>
+            <img src="./Images/icons8-linkedin.svg" alt="" />
+            <a
+              id="contact-linkedin"
+              href="https://www.linkedin.com/in/anil-reddy-b2a364169/"
+              >Kancharla Anil</a
+            >
+          </div>
+          <div>
+            <img src="./Images/mail.svg" alt="#" />
+            <a id="contact-email" href="">kanilreddy867@gmail.com</a>
+          </div>
+          <div>
+            <img src="./Images/phone.svg" alt="#" />
+            <a id="contact-phone" href="">+91 7995125254</a>
+          </div>
         </div>
+        <div id="contact-info">
+          <p>
+            I am actively seeking to join a team of talented developers. If you
+            believe that we would work well together, please don't hesitate to
+            contact me via phone or email.
+          </p>
+        </div>
+      </div>
     </div>
     <footer>
-        <span>
-            Created By
-            <a id="footer-name" href="#home"> <span><img id="footer-logo" src="./Images/logo.jpg" alt=""> <br></span>Anil</a>
-            <span>&copy;</span>
-            2023 All rights reserved.
-        </span>
+      <span>
+        Created By
+        <a id="footer-name" href="#home">
+          <span
+            ><img id="footer-logo" src="./Images/logo.jpg" alt="" />
+            <br /></span
+          >Anil</a
+        >
+        <span>&copy;</span>
+        2023 All rights reserved.
+      </span>
     </footer>
-</body>
-
+  </body>
 </html>
 <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 <script src="portfolio.js"></script>
