@@ -427,6 +427,9 @@ footer > span > a + span {
     justify-content: center;
     align-items: center;
   }
+  #about{
+    margin-top: 50px
+  }
   .nav-toggle-label {
     display: block;
   }
@@ -435,8 +438,8 @@ footer > span > a + span {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 99%;
-    height: 50vh;
+    width: 95%;
+    height: 17vh;
     background-color: #b23850;
     padding: 10px;
     text-align: center;
@@ -485,6 +488,7 @@ footer > span > a + span {
   #about-info {
     width: 100%;
     text-align: start;
+    margin-top: 10px;
   }
 
   #user-detail-name {
@@ -501,21 +505,16 @@ footer > span > a + span {
   #skills > h1,
   #contact > h1,
   #about > h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .project-card {
     display: flex;
     flex-direction: column;
     width: auto;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-bottom: 20%;
   }
-
-  /* .project-title {
-    font-family: "Ubuntu", sans-serif;
-    font-size: 25px;
-  } */
 
   .project-info {
     padding: 10px;
@@ -531,17 +530,16 @@ footer > span > a + span {
   }
 
   .swiper {
-    width: 363px;
+    width: 343px;
     height: 300px;
     object-fit: cover;
     box-shadow: -1px 0px 3px -1px rgb(125, 124, 124);
+    pointer-events: none;
   }
 
-  .swiper-slide > img {
-    width: 400px;
-    height: auto;
-    object-fit: cover;
-    cursor: pointer;
+  .swiper:hover .swiper-slide > img {
+    width: auto;
+    transition: none;
   }
 
   .swiper:hover .project-info {
@@ -580,7 +578,7 @@ footer > span > a + span {
     height: 250px;
   }
   .swiper:hover {
-    width: 700px;
+    width: 100px;
   }
 }
 
@@ -600,39 +598,6 @@ footer > span > a + span {
   height: auto;
   background: transparent;
   padding: 0;
-  border: none;
-  cursor: pointer;
-}
-
-/* button styling */
-.project-title {
-  --border-right: 6px;
-  --animation-color: white;
-  --fs-size: 2em;
-  letter-spacing: 3px;
-  text-decoration: none;
-  font-size: var(--fs-size);
-  font-family: "Arial";
-  position: relative;
-  text-transform: uppercase;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-/* this is the text, when you hover on button */
-.hover-text {
-  position: absolute;
-  box-sizing: border-box;
-  content: attr(data-text);
-  color: var(--animation-color);
-  width: 0%;
-  inset: 0;
-  border-right: var(--border-right) solid var(--animation-color);
-  overflow: hidden;
-  transition: 0.5s;
-  -webkit-text-stroke: 1px var(--animation-color);
-}
-/* hover */
-.project-title:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 23px var(--animation-color));
+  font-family: "Lexend", sans-serif;
+  font-size: x-large;
 }
