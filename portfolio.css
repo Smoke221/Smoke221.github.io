@@ -550,6 +550,9 @@ footer > span > a + span {
     display: grid;
     grid-template-columns: auto repeat(1, 1fr);
   }
+  #github-stats-card, #github-streak-stats{
+    width: 90%;
+  }
 }
 
 /* #resume-button-2>a{
