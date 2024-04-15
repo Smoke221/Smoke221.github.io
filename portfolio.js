@@ -71,7 +71,7 @@ GitHubCalendar(".calendar", "Smoke221", { responsive: true });
 function downloadResume() {
     var link = document.createElement('a');
     link.setAttribute('download', 'Kancharla-Anil-resume.pdf');
-    link.href = "https://test-resume.masaischool.com/resume?resumeId=64c0c38653b9f28d84aa4c0a&selectedTemplate=TwoColumnMinimal";
+    link.href = "https://drive.google.com/file/d/1kz_dIzqBN54y90HuqVGJuzLR-xpHSdnO/view?usp=sharing";
     link.target = "_blank";
     link.style.display = 'none';
     document.body.appendChild(link);
