@@ -421,7 +421,7 @@ footer > span > a + span {
   margin-bottom: 5px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 450px) {
+@media only screen and (min-width: 0px) and (max-width: 550px) {
   nav {
     display: flex;
     justify-content: center;
@@ -465,7 +465,7 @@ footer > span > a + span {
     top: -47px;
   }
   #about-container.about.section {
-    height: 450px;
+    height: 500px;
   }
   .nav-toggle-label {
     display: block;
@@ -574,9 +574,14 @@ footer > span > a + span {
     margin: 30px 0 30px 0;
   }
 
+  .project-info>a {
+    font-size: smaller;
+  }
+
   .project-description {
     width: 320px;
-    height: 106px;
+    height: 56px;
+    font-size: small;
   }
   .swiper {
     width: 343px;
