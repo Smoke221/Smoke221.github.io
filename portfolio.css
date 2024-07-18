@@ -10,16 +10,6 @@ a {
   text-decoration: none;
 }
 
-#resume-button-1,
-#resume-button-2 {
-  background-color: #b23850;
-  border: none;
-  color: white;
-  font-family: "Lexend", sans-serif;
-  padding: 0.7rem;
-  border-radius: 50px;
-}
-
 span {
   color: #b23850;
 }
@@ -33,6 +23,8 @@ ul > li > a {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav {
@@ -48,6 +40,7 @@ nav {
   transition: background-color 0.5s ease;
   z-index: 998;
 }
+
 .nav-scroll {
   background-color: #b23850;
 }
@@ -69,9 +62,14 @@ nav > ul:nth-child(3) > li > a {
   font-weight: bolder;
 }
 
-#nav-name span {
-  box-shadow: inset 0 0 0 0 white;
-  color: #b23850;
+#resume-button-1,
+#resume-button-2 {
+  background-color: #b23850;
+  border: none;
+  color: white;
+  font-family: "Lexend", sans-serif;
+  padding: 1rem;
+  border-radius: 50px;
 }
 
 #home {
@@ -86,19 +84,20 @@ nav > ul:nth-child(3) > li > a {
   left: 0;
   width: 100%;
   height: 100%;
-  /* background-image: url(./Images/blackbg.jfif); */
   filter: brightness(0.3);
   z-index: -1;
 }
+
 #video-background {
   position: absolute;
-  top: 0;
+  top: -2.5%;
   left: -15%;
   width: 115%;
   height: 100%;
   object-fit: cover;
   z-index: -1;
 }
+
 #home-about {
   position: relative;
   left: 25%;
@@ -107,7 +106,6 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #home-about .intro {
-  margin-top: 2rem;
   font-size: 0.8rem;
 }
 
@@ -117,7 +115,7 @@ nav > ul:nth-child(3) > li > a {
   justify-content: space-around;
   align-items: center;
   margin: auto;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 #about-container > img {
@@ -134,23 +132,21 @@ nav > ul:nth-child(3) > li > a {
   font-family: "Ubuntu", sans-serif;
 }
 
-#home-about > div:nth-child(1) {
+#home-about > p {
   font-family: "Ubuntu", sans-serif;
   color: white;
-  font-size: 30px;
 }
 
 #name {
   font-size: 90px;
   font-family: "Ubuntu", sans-serif;
   color: #b23850;
-  margin-bottom: -30px;
 }
 
 #name + p {
   font-family: "Lexend", sans-serif;
   color: white;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 #name + p + a {
@@ -158,7 +154,6 @@ nav > ul:nth-child(3) > li > a {
   color: white;
   position: relative;
   display: inline-block;
-  text-decoration: none;
 }
 
 #name + p + a::after {
@@ -183,7 +178,6 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #projects::before {
-  /* color: white; */
   content: "";
   position: absolute;
   top: 0;
@@ -195,17 +189,6 @@ nav > ul:nth-child(3) > li > a {
   z-index: -1;
 }
 
-/* .project-number {
-  position: absolute;
-  top: 4rem;
-  font-size: 15rem;
-  max-width: max-content;
-  font-family: sans-serif;
-  font-weight: 700;
-  color: white;
-  opacity: 0.1;
-  z-index: -1;
-} */
 .project-card {
   display: flex;
   justify-content: space-around;
@@ -214,7 +197,6 @@ nav > ul:nth-child(3) > li > a {
   height: 28.125rem;
   margin: auto;
   padding: 1rem;
-  /* position: relative; */
 }
 
 .project-info {
@@ -231,7 +213,7 @@ nav > ul:nth-child(3) > li > a {
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0 30px 0;
+  margin: 30px 0;
 }
 
 .project-tech-stack > p {
@@ -251,7 +233,7 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .swiper-slide > img {
-  width: 37.5rem;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -263,7 +245,7 @@ nav > ul:nth-child(3) > li > a {
   text-align: center;
   font-family: "Ubuntu", sans-serif;
   font-size: 70px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #projects > p,
@@ -284,14 +266,12 @@ nav > ul:nth-child(3) > li > a {
   font-size: larger;
 }
 
-/* skills */
 #skills {
   padding: 2rem;
 }
 
 #container {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: center;
   width: 40%;
   margin: auto;
@@ -316,20 +296,10 @@ nav > ul:nth-child(3) > li > a {
 
 #container-contact {
   display: flex;
-  justify-content: space-between;
-  font-family: "Lexend", sans-serif;
-  width: 60%;
-  align-items: center;
-  margin: auto;
-}
-
-#container-contact {
-  display: flex;
   align-items: start;
   justify-content: center;
   gap: 4rem;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
 }
 
 #contact-info {
@@ -354,7 +324,6 @@ nav > ul:nth-child(3) > li > a {
   color: #b23850;
 }
 
-/* Github Stats */
 #github {
   display: flex;
   justify-content: center;
@@ -364,7 +333,6 @@ nav > ul:nth-child(3) > li > a {
   margin-top: 3rem;
 }
 
-/* footer */
 footer {
   background-color: rgb(61, 61, 61);
   padding: 0.6rem;
@@ -382,16 +350,24 @@ footer > span > a + span {
   color: #b23850;
   font-weight: 700;
 }
+
 #mobile-nav-menu {
   display: none;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 550px) {
+@media (max-width: 550px) {
+  #home {
+    height: 80vh;
+  }
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
   }
+
   #mobile-nav-menu {
     background-color: #151212;
     position: fixed;
@@ -402,6 +378,8 @@ footer > span > a + span {
     justify-content: center;
     align-items: center;
     z-index: 2;
+    padding: 10px 0;
+    box-sizing: border-box;
   }
 
   .mob-nav-menu-items {
@@ -409,7 +387,7 @@ footer > span > a + span {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     padding: 0 10px;
   }
 
@@ -421,67 +399,40 @@ footer > span > a + span {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    text-align: center;
   }
-  .mob-nav-menu-items li a{
+
+  .mob-nav-menu-items li a {
     font-size: 0.6rem;
   }
-  #home {
-    height: 624px;
-  }
-  #about {
-    margin-top: 50px;
-  }
-  #logo {
-    position: relative;
-    left: -26px;
-    top: 18px;
-  }
-  #about-img.home-img {
-    position: relative;
-    left: 3px;
-    top: -99px;
-    width: 209px;
-    height: 168.5px;
-  }
-  #user-detail-name {
-    position: relative;
-    left: -25px;
-    top: 5px;
-    width: 233px;
-  }
-  #user-detail-intro {
-    position: relative;
-    left: -2px;
-    top: -12px;
-    width: 278px;
-    transform: translate(-22px, 0px);
-    height: 182px;
-  }
-  #resume-button-2 {
-    position: relative;
-    left: -25px;
-    top: -47px;
-  }
-  #about-container.about.section {
-    height: 500px;
-  }
+
   .nav-menu-items {
     display: none;
   }
 
-  #home-about > div:nth-child(1) {
-    font-size: 20px;
+  #home-about{
+    left: 10%;
+    width: 80%;
+  }
+
+  #home-about .intro {
+    font-size: 3vw;
   }
 
   #name {
-    font-size: 40px;
-    margin-bottom: 5px;
+    font-size: 10vw;
+    margin-bottom: 1vw;
   }
 
   #name + p,
   #name + p + a {
-    font-size: 16px;
+    font-size: 4vw;
   }
+
+  #home-about > p {
+    font-size: 5vw;
+  }
+
 
   #contact-info {
     width: 100%;
@@ -500,16 +451,10 @@ footer > span > a + span {
   #about-info {
     width: 100%;
     text-align: start;
-    margin-top: 10px;
-  }
-
-  #user-detail-name {
-    font-size: 30px;
-    font-family: "Ubuntu", sans-serif;
   }
 
   #user-detail-intro {
-    font-size: 16px;
+    font-size: 3vw;
     text-align: start;
   }
 
@@ -517,10 +462,11 @@ footer > span > a + span {
   #skills > h1,
   #contact > h1,
   #about > h1 {
-    font-size: 50px;
+    font-size: 12vw;
   }
+
   #projects > p {
-    font-size: small;
+    font-size: 3vw;
   }
 
   .project-card {
@@ -533,34 +479,36 @@ footer > span > a + span {
 
   .project-info {
     padding: 10px;
-    transform: translate(0px, -118px);
+    transform: translate(0, -30%);
     transition: width 0.3s ease-out, height 0.3s ease-out;
   }
+
   #project-image-coursel {
     position: relative;
     width: 343px;
     height: 325px;
-    left: -1px;
-    top: -93px;
+    left: 0;
+    top: -20%;
   }
 
   .project-tech-stack {
     display: flex;
-    gap: 10px;
+    gap: 2vw;
     align-items: center;
     flex-wrap: wrap;
-    margin: 30px 0 30px 0;
+    margin: 5vh 0;
   }
 
   .project-info > a {
-    font-size: smaller;
+    font-size: 3vw;
   }
 
   .project-description {
-    width: 320px;
-    height: 56px;
-    font-size: small;
+    width: 80vw;
+    height: auto;
+    font-size: 3vw;
   }
+
   .swiper {
     width: 343px;
     height: 300px;
@@ -573,14 +521,15 @@ footer > span > a + span {
     display: grid;
     grid-template-columns: auto repeat(1, 1fr);
   }
+
   #github-stats-card,
   #github-streak-stats {
     width: 90%;
   }
 }
 
-@media only screen and (min-width: 551px) and (max-width: 1000px) {
-  .github {
+/* @media only screen and (min-width: 551px) and (max-width: 1000px) { */
+/* .github {
     width: 70%;
     align-items: center;
     margin-left: 15%;
@@ -602,8 +551,7 @@ footer > span > a + span {
   }
 }
 
-/* css for the logo */
-#logo {
+/* #logo {
   width: 18%;
   border-radius: 50%;
 }
@@ -626,4 +574,4 @@ footer > span > a + span {
   max-width: 100%;
   height: auto;
   display: block;
-}
+} */
