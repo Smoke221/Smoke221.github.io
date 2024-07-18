@@ -106,7 +106,7 @@ nav > ul:nth-child(3) > li > a {
   width: 60%;
 }
 
-#home-about .intro{
+#home-about .intro {
   margin-top: 2rem;
   font-size: 0.8rem;
 }
@@ -195,6 +195,17 @@ nav > ul:nth-child(3) > li > a {
   z-index: -1;
 }
 
+/* .project-number {
+  position: absolute;
+  top: 4rem;
+  font-size: 15rem;
+  max-width: max-content;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: white;
+  opacity: 0.1;
+  z-index: -1;
+} */
 .project-card {
   display: flex;
   justify-content: space-around;
@@ -203,6 +214,7 @@ nav > ul:nth-child(3) > li > a {
   height: 28.125rem;
   margin: auto;
   padding: 1rem;
+  /* position: relative; */
 }
 
 .project-info {
@@ -234,7 +246,7 @@ nav > ul:nth-child(3) > li > a {
 
 .swiper {
   width: 37.5rem;
-  height: 22rem;
+  height: 25rem;
   border-radius: 0.625rem;
 }
 
@@ -370,40 +382,48 @@ footer > span > a + span {
   color: #b23850;
   font-weight: 700;
 }
-
-/* #nav-menu {
-    position: relative;
-} */
-/* this is overriding the navbar to static */
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  padding: 15px;
-  z-index: 100;
-  margin-top: 5px;
+#mobile-nav-menu {
   display: none;
-}
-
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #fffdfd;
-  margin-bottom: 5px;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 550px) {
   nav {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #mobile-nav-menu {
+    background-color: #151212;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
+  }
+
+  .mob-nav-menu-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 10px;
+  }
+
+  .mob-nav-menu-items li {
+    list-style: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .mob-nav-menu-items li a{
+    font-size: 0.6rem;
   }
   #home {
     height: 624px;
@@ -445,29 +465,6 @@ footer > span > a + span {
   #about-container.about.section {
     height: 500px;
   }
-  .nav-toggle-label {
-    display: block;
-  }
-  .nav-toggle:checked ~ .nav-menu-items {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 95%;
-    height: 17vh;
-    background-color: #b23850;
-    padding: 10px;
-    text-align: center;
-    /* opacity: 1; */
-    /* z-index: 999; */
-    visibility: visible;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  }
-
-  .nav-menu-items li {
-    margin-bottom: 10px;
-  }
-
   .nav-menu-items {
     display: none;
   }
@@ -522,12 +519,13 @@ footer > span > a + span {
   #about > h1 {
     font-size: 50px;
   }
-  #projects>p{
+  #projects > p {
     font-size: small;
   }
 
   .project-card {
     flex-wrap: wrap;
+    align-items: center;
     width: auto;
     margin-top: 30%;
     margin-bottom: 20%;
@@ -538,8 +536,12 @@ footer > span > a + span {
     transform: translate(0px, -118px);
     transition: width 0.3s ease-out, height 0.3s ease-out;
   }
-  #project-image-coursel{
-    position: relative; width: 343px; height: 325px; left: -1px; top: -93px;
+  #project-image-coursel {
+    position: relative;
+    width: 343px;
+    height: 325px;
+    left: -1px;
+    top: -93px;
   }
 
   .project-tech-stack {
@@ -550,7 +552,7 @@ footer > span > a + span {
     margin: 30px 0 30px 0;
   }
 
-  .project-info>a {
+  .project-info > a {
     font-size: smaller;
   }
 
@@ -577,11 +579,7 @@ footer > span > a + span {
   }
 }
 
-/* #resume-button-2>a{
-    color: white;
-} */
-
-@media only screen and (min-width: 450px) and (max-width: 1000px) {
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
   .github {
     width: 70%;
     align-items: center;
