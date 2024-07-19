@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: "Outfit", sans-serif;
 }
 
 html {
@@ -10,13 +11,12 @@ a {
   text-decoration: none;
 }
 
-span {
+span{
   color: #b23850;
 }
 
 ul > li > a {
   font-size: 19px;
-  font-family: "Ubuntu", sans-serif;
   color: white;
   font-weight: 900;
 }
@@ -67,7 +67,6 @@ nav > ul:nth-child(3) > li > a {
   background-color: #b23850;
   border: none;
   color: white;
-  font-family: "Lexend", sans-serif;
   padding: 1rem;
   border-radius: 50px;
 }
@@ -106,7 +105,13 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #home-about .intro {
-  font-size: 0.8rem;
+  font-size: 1rem;
+}
+
+.intro + a {
+  font-size: larger;
+  margin-top: 5%;
+  font-family: "Caveat", cursive;
 }
 
 #about-container {
@@ -129,28 +134,23 @@ nav > ul:nth-child(3) > li > a {
 
 #user-detail-name {
   font-size: 40px;
-  font-family: "Ubuntu", sans-serif;
 }
 
 #home-about > p {
-  font-family: "Ubuntu", sans-serif;
   color: white;
 }
 
 #name {
   font-size: 90px;
-  font-family: "Ubuntu", sans-serif;
   color: #b23850;
 }
 
 #name + p {
-  font-family: "Lexend", sans-serif;
   color: white;
   font-size: 24px;
 }
 
 #name + p + a {
-  font-family: "Lexend", sans-serif;
   color: white;
   position: relative;
   display: inline-block;
@@ -174,7 +174,7 @@ nav > ul:nth-child(3) > li > a {
 #projects {
   color: white;
   position: relative;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 #projects::before {
@@ -191,21 +191,15 @@ nav > ul:nth-child(3) > li > a {
 
 .project-card {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
-  width: 60%;
-  height: 28.125rem;
-  margin: auto;
   padding: 1rem;
 }
 
 .project-info {
   padding: 20px;
-  transition: transform 2s, filter 2s ease-in-out;
-}
-
-.project-description {
-  font-family: "Lexend", sans-serif;
+  width: 30vw;
 }
 
 .project-tech-stack {
@@ -213,21 +207,19 @@ nav > ul:nth-child(3) > li > a {
   gap: 10px;
   align-items: center;
   flex-wrap: wrap;
-  margin: 30px 0;
 }
 
 .project-tech-stack > p {
   background-color: #b23850;
   border: none;
   color: white;
-  font-family: "Lexend", sans-serif;
   padding: 0.3rem;
   border-radius: 50px;
   font-size: x-small;
 }
 
 .swiper {
-  width: 37.5rem;
+  width: 40rem;
   height: 25rem;
   border-radius: 0.625rem;
 }
@@ -243,7 +235,6 @@ nav > ul:nth-child(3) > li > a {
 #about > h1,
 .github > h1 {
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
   font-size: 70px;
   margin-bottom: 0;
 }
@@ -251,19 +242,23 @@ nav > ul:nth-child(3) > li > a {
 #projects > p,
 #skills > p,
 #contact > p,
-#user-detail-intro,
 #contact-container,
 #about > p {
   text-align: center;
-  font-family: "Lexend", sans-serif;
   font-size: larger;
-  margin-bottom: 50px;
+  font-family: "Caveat", cursive;
 }
 
-.project-info > a {
-  font-family: "Lexend", sans-serif;
-  color: #b23850;
+.project-source {
+  display: flex;
+  gap: 2rem;
   font-size: larger;
+  font-weight: bolder;
+  font-family: "Caveat", cursive;
+}
+
+.project-info .project-source > a {
+  color: #b23850;
 }
 
 #skills {
@@ -290,7 +285,6 @@ nav > ul:nth-child(3) > li > a {
 
 .skills-card-name {
   margin-top: 10px;
-  font-family: "Lexend", sans-serif;
   font-weight: bolder;
 }
 
@@ -298,7 +292,6 @@ nav > ul:nth-child(3) > li > a {
   display: flex;
   align-items: start;
   justify-content: center;
-  gap: 4rem;
   flex-wrap: wrap;
 }
 
@@ -324,6 +317,12 @@ nav > ul:nth-child(3) > li > a {
   color: #b23850;
 }
 
+.github{
+  color: white;
+  padding: 1rem;
+  background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg);
+}
+
 #github {
   display: flex;
   justify-content: center;
@@ -333,11 +332,14 @@ nav > ul:nth-child(3) > li > a {
   margin-top: 3rem;
 }
 
+#github img {
+  width: 350px;
+}
+
 footer {
   background-color: rgb(61, 61, 61);
   padding: 0.6rem;
   text-align: center;
-  font-family: "Lexend", sans-serif;
   font-size: 18px;
 }
 
@@ -373,44 +375,38 @@ footer > span > a + span {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 2;
-    padding: 10px 0;
-    box-sizing: border-box;
   }
 
   .mob-nav-menu-items {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10px;
+    gap: 1rem;
   }
 
-  .mob-nav-menu-items li {
-    list-style: none;
-    flex: 1;
+  .mob-nav-menu-items a {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 0.5rem;
-    text-align: center;
+    color: inherit;
+    padding: 10px;
+    font-size: 0.7rem;
+    transition: background-color 0.3s;
   }
 
-  .mob-nav-menu-items li a {
-    font-size: 0.6rem;
+  .mob-nav-menu-items a:hover {
+    background-color: #f0f0f0;
   }
 
   .nav-menu-items {
     display: none;
   }
 
-  #home-about{
+  #home-about {
     left: 10%;
     width: 80%;
   }
@@ -433,9 +429,9 @@ footer > span > a + span {
     font-size: 5vw;
   }
 
-
   #contact-info {
-    width: 100%;
+    width: 80%;
+    font-size: 1rem;
   }
 
   #about-container {
@@ -461,7 +457,8 @@ footer > span > a + span {
   #projects > h1,
   #skills > h1,
   #contact > h1,
-  #about > h1 {
+  #about > h1,
+  .github>h1 {
     font-size: 12vw;
   }
 
@@ -471,22 +468,16 @@ footer > span > a + span {
 
   .project-card {
     flex-wrap: wrap;
-    align-items: center;
-    width: auto;
-    margin-top: 30%;
-    margin-bottom: 20%;
+    margin-top: 10vw;
   }
 
   .project-info {
+    width: 100%;
     padding: 10px;
-    transform: translate(0, -30%);
-    transition: width 0.3s ease-out, height 0.3s ease-out;
   }
 
   #project-image-coursel {
     position: relative;
-    width: 343px;
-    height: 325px;
     left: 0;
     top: -20%;
   }
@@ -496,7 +487,6 @@ footer > span > a + span {
     gap: 2vw;
     align-items: center;
     flex-wrap: wrap;
-    margin: 5vh 0;
   }
 
   .project-info > a {
@@ -510,10 +500,9 @@ footer > span > a + span {
   }
 
   .swiper {
-    width: 343px;
-    height: 300px;
+    width: 85vw;
+    height: 60vw;
     object-fit: cover;
-    box-shadow: -1px 0px 3px -1px rgb(125, 124, 124);
     pointer-events: none;
   }
 
@@ -527,51 +516,3 @@ footer > span > a + span {
     width: 90%;
   }
 }
-
-/* @media only screen and (min-width: 551px) and (max-width: 1000px) { */
-/* .github {
-    width: 70%;
-    align-items: center;
-    margin-left: 15%;
-  }
-  #container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .project-card {
-    flex-direction: column;
-  }
-  .swiper-slide > img {
-    height: 250px;
-    width: 700px;
-  }
-  .swiper {
-    width: 600px;
-    height: 250px;
-  }
-}
-
-/* #logo {
-  width: 18%;
-  border-radius: 50%;
-}
-#footer-logo {
-  margin-bottom: -4px;
-  width: 1.3%;
-  border-radius: 50%;
-}
-
-.project-title {
-  margin: 0;
-  height: auto;
-  background: transparent;
-  padding: 0;
-  font-family: "Lexend", sans-serif;
-  font-size: x-large;
-}
-
-#about-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
