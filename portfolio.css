@@ -267,8 +267,9 @@ nav > ul:nth-child(3) > li > a {
 
 #container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 40%;
+  width: 80%;
   margin: auto;
   gap: 3rem;
 }
@@ -296,8 +297,10 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #contact-info {
-  width: 50%;
+  width: 30%;
   font-size: larger;
+  text-align: start;
+  padding: 1rem;
 }
 
 #main-contact div {
@@ -308,8 +311,8 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #main-contact img {
-  height: 30px;
-  width: 30px;
+  height: 2rem;
+  width: 2rem;
 }
 
 #main-contact a {
@@ -334,6 +337,12 @@ nav > ul:nth-child(3) > li > a {
 
 #github img {
   width: 350px;
+}
+#github div{
+  background-color: rgb(252, 217, 217);
+}
+#github div>img{
+  width: 500px;
 }
 
 footer {
@@ -392,14 +401,16 @@ footer > span > a + span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: inherit;
+    /* color: inherit; */
     padding: 10px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    font-weight: 600;
     transition: background-color 0.3s;
   }
 
   .mob-nav-menu-items a:hover {
     background-color: #f0f0f0;
+    color: inherit;
   }
 
   .nav-menu-items {
@@ -430,7 +441,7 @@ footer > span > a + span {
   }
 
   #contact-info {
-    width: 80%;
+    width: 64%;
     font-size: 1rem;
   }
 
@@ -514,5 +525,8 @@ footer > span > a + span {
   #github-stats-card,
   #github-streak-stats {
     width: 90%;
+  }
+  #github div>img{
+    width: 350px;
   }
 }
