@@ -12,13 +12,12 @@ a {
 }
 
 span{
-  color: #b23850;
+  color: #D1462F !important;
 }
 
 ul > li > a {
   font-size: 19px;
   color: white;
-  font-weight: 900;
 }
 
 ul {
@@ -42,7 +41,7 @@ nav {
 }
 
 .nav-scroll {
-  background-color: #b23850;
+  background-color: #D1462F;
 }
 
 .nav-menu-items {
@@ -53,7 +52,7 @@ nav {
 }
 
 nav > ul:nth-child(3) > li > a {
-  color: #b23850;
+  color: #D1462F;
   font-size: 20px;
 }
 
@@ -64,7 +63,7 @@ nav > ul:nth-child(3) > li > a {
 
 #resume-button-1,
 #resume-button-2 {
-  background-color: #b23850;
+  background-color: #D1462F;
   border: none;
   color: white;
   padding: 1rem;
@@ -142,7 +141,7 @@ nav > ul:nth-child(3) > li > a {
 
 #name {
   font-size: 90px;
-  color: #b23850;
+  color: #D1462F;
 }
 
 #name + p {
@@ -151,24 +150,7 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #name + p + a {
-  color: white;
-  position: relative;
-  display: inline-block;
-}
-
-#name + p + a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #b23850;
-  transition: width 1s ease-in-out;
-}
-
-#name + p + a:hover::after {
-  width: 100%;
+  font-size: 1.5vw;
 }
 
 #projects {
@@ -210,10 +192,11 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .project-tech-stack > p {
-  background-color: #b23850;
+  /* background-color: #D1462F; */
   border: none;
   color: white;
   padding: 0.3rem;
+  border: 2px solid #D1462F;
   border-radius: 50px;
   font-size: x-small;
 }
@@ -242,6 +225,7 @@ nav > ul:nth-child(3) > li > a {
 #projects > p,
 #skills > p,
 #contact > p,
+.github > p,
 #contact-container,
 #about > p {
   text-align: center;
@@ -258,7 +242,7 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .project-info .project-source > a {
-  color: #b23850;
+  color: #D1462F;
 }
 
 #skills {
@@ -282,11 +266,6 @@ nav > ul:nth-child(3) > li > a {
 .skills-card-img {
   width: 100px;
   height: 100px;
-}
-
-.skills-card-name {
-  margin-top: 10px;
-  font-weight: bolder;
 }
 
 #container-contact {
@@ -317,7 +296,7 @@ nav > ul:nth-child(3) > li > a {
 
 #main-contact a {
   text-decoration: none;
-  color: #b23850;
+  color: #D1462F;
 }
 
 .github{
@@ -339,7 +318,7 @@ nav > ul:nth-child(3) > li > a {
   width: 350px;
 }
 #github div{
-  background-color: rgb(252, 217, 217);
+  background-color: #ffb7aa;
 }
 #github div>img{
   width: 500px;
@@ -358,7 +337,7 @@ footer > span > a + span {
 }
 
 #footer-name {
-  color: #b23850;
+  color: #D1462F;
   font-weight: 700;
 }
 
@@ -372,9 +351,9 @@ footer > span > a + span {
   }
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 1rem;
     box-sizing: border-box;
     width: 100%;
   }
@@ -431,9 +410,12 @@ footer > span > a + span {
     margin-bottom: 1vw;
   }
 
-  #name + p,
-  #name + p + a {
+  #name + p{
     font-size: 4vw;
+  }
+
+  #name+p+a{
+    font-size: 5vw;
   }
 
   #home-about > p {
@@ -474,12 +456,11 @@ footer > span > a + span {
   }
 
   #projects > p {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .project-card {
     flex-wrap: wrap;
-    margin-top: 10vw;
   }
 
   .project-info {

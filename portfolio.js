@@ -29,8 +29,8 @@ window.addEventListener('scroll', function () {
         navResume.style.border = '2px solid white'
     } else {
         navbar.classList.remove('nav-scroll');
-        navName.style.color = '#b23850'
-        spanElement.style.color = '#b23850'
+        navName.style.color = '#D1462F'
+        spanElement.style.color = '#D1462F'
         navResume.style.border = 'none'
     }
 });
