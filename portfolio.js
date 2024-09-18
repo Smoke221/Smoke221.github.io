@@ -1,89 +1,102 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplayDisableOnInteraction: true,
-    effect: "creative",
-      creativeEffect: {
-        prev: {
-          shadow: true,
-          translate: [0, 0, -400],
-        },
-        next: {
-          translate: ["100%", 0, 0],
-        },
-      },
-    autoplay: {
-        delay: 5000
-    }
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  autoplayDisableOnInteraction: true,
+  effect: "creative",
+  creativeEffect: {
+    prev: {
+      shadow: true,
+      translate: [0, 0, -400],
+    },
+    next: {
+      translate: ["100%", 0, 0],
+    },
+  },
+  autoplay: {
+    delay: 5000,
+  },
 });
 
-
-window.addEventListener('scroll', function () {
-    var navbar = document.querySelector('nav');
-    var navName = document.querySelector("#nav-name")
-    var spanElement = document.querySelector('span')
-    var navResume = document.querySelector('#resume-button-1')
-    if (window.scrollY > 100) {
-        navbar.classList.add('nav-scroll');
-        navName.style.color = 'white'
-        spanElement.style.color = 'white'
-        navResume.style.border = '2px solid white'
-    } else {
-        navbar.classList.remove('nav-scroll');
-        navName.style.color = '#D1462F'
-        spanElement.style.color = '#D1462F'
-        navResume.style.border = 'none'
-    }
+window.addEventListener("scroll", function () {
+  var navbar = document.querySelector("nav");
+  var navName = document.querySelector("#nav-name");
+  var spanElement = document.querySelector("span");
+  var navResume = document.querySelector("#resume-button-1");
+  if (window.scrollY > 100) {
+    navbar.classList.add("nav-scroll");
+    navName.style.color = "white";
+    spanElement.style.color = "white";
+    navResume.style.border = "2px solid white";
+  } else {
+    navbar.classList.remove("nav-scroll");
+    navName.style.color = "#D1462F";
+    spanElement.style.color = "#D1462F";
+    navResume.style.border = "none";
+  }
 });
-
 
 function smoothScroll(target, duration) {
-    var targetElement = document.querySelector(target);
-    var targetPosition = targetElement.offsetTop;
-    var startPosition = window.pageYOffset;
-    var distance = targetPosition - startPosition;
-    var startTime = null;
+  var targetElement = document.querySelector(target);
+  var targetPosition = targetElement.offsetTop;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition - startPosition;
+  var startTime = null;
 
-    function animation(currentTime) {
-        if (startTime === null) {
-            startTime = currentTime;
-        }
-        var timeElapsed = currentTime - startTime;
-        var run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-        if (timeElapsed < duration) {
-            requestAnimationFrame(animation);
-        }
+  function animation(currentTime) {
+    if (startTime === null) {
+      startTime = currentTime;
     }
-
-    function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return c / 2 * t * t + b;
-        t--;
-        return -c / 2 * (t * (t - 2) - 1) + b;
+    var timeElapsed = currentTime - startTime;
+    var run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) {
+      requestAnimationFrame(animation);
     }
+  }
 
-    requestAnimationFrame(animation);
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
 }
 
 var links = document.querySelectorAll('a[href^="#"]');
 links.forEach(function (link) {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-        var target = this.getAttribute('href');
-        var duration = 1000; // Change this to adjust the duration of the animation
-        smoothScroll(target, duration);
-    });
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+    var target = this.getAttribute("href");
+    var duration = 1000;
+    smoothScroll(target, duration);
+  });
 });
 
 GitHubCalendar(".calendar", "Smoke221", { responsive: true });
 
 function downloadResume() {
-    var link = document.createElement('a');
-    link.setAttribute('download', 'Kancharla-Anil-resume.pdf');
-    link.href = "https://drive.google.com/file/d/1kz_dIzqBN54y90HuqVGJuzLR-xpHSdnO/view?usp=sharing";
-    link.target = "_blank";
-    link.style.display = 'none';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  // Display the first modal
+  document.getElementById("firstModal").style.display = "block";
+
+  // Set a timeout for the second modal
+  setTimeout(() => {
+    closeModal('firstModal');
+    document.getElementById("secondModal").style.display = "block";
+  }, 2000);
+
+  // Set a timeout for the resume modal
+  setTimeout(() => {
+    closeModal('secondModal');
+    document.getElementById("resumeModal").style.display = "block";
+    
+    // Set a timeout to automatically close the resume modal
+    setTimeout(() => {
+      closeModal('resumeModal');
+    }, 3000); // Close after 3 seconds
+  }, 4000); // Show last modal after 4 seconds
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}

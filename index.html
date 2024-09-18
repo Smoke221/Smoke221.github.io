@@ -1,480 +1,389 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kancharla Anil | Portfolio</title>
-    <link rel="icon" href="./Images/logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="portfolio.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-88Q5VLRQR0"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "GT-NGJTQ2CJ");
-    </script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kancharla Anil | Portfolio</title>
+  <link rel="icon" href="./Images/logo.jpg" type="image/x-icon" />
+  <link rel="stylesheet" href="portfolio.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-88Q5VLRQR0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  <body>
-    <div id="home">
-      <nav id="nav-menu">
-        <ul id="logo-container">
-          <li><a id="nav-name" href="#home">Kancharla</a></li>
-        </ul>
-        <ul class="nav-menu-items">
-          <li><a class="nav-link home" href="#home">Home</a></li>
-          <li><a class="nav-link about" href="#about">About Me</a></li>
-          <li><a class="nav-link projects" href="#projects">Project</a></li>
-          <li><a class="nav-link skills" href="#skills">Skills</a></li>
-          <li><a class="nav-link contact" href="#contact">Contact</a></li>
-        </ul>
-        <ul>
-          <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
-          <button
-            id="resume-button-1"
-            class="nav-link resume"
-            onclick="downloadResume()"
-          >
-            Resume
-          </button>
-        </ul>
-      </nav>
-      <div id="mobile-nav-menu">
-        <ul class="mob-nav-menu-items">
-          <li>
-            <a class="nav-link home" href="#about">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#5f6368"
-              >
-                <path
-                  d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
-                />
-              </svg>
-              Profile
-            </a>
-          </li>
-          <li>
-            <a class="nav-link projects" href="#projects">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#5f6368"
-              >
-                <path
-                  d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z"
-                />
-              </svg>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a class="nav-link home" href="#home">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#5f6368"
-              >
-                <path
-                  d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
-                />
-              </svg>
-              Home
-            </a>
-          </li>
-          <li>
-            <a class="nav-link skills" href="#skills">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#5f6368"
-              >
-                <path
-                  d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z"
-                />
-              </svg>
-              Skills
-            </a>
-          </li>
-          <li>
-            <a class="nav-link contact" href="#contact">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="30px"
-                viewBox="0 -960 960 960"
-                width="40px"
-                fill="#5f6368"
-              >
-                <path
-                  d="M796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z"
-                />
-              </svg>
-              Contact
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div id="home-about">
-        <p>Hello there, I'm</p>
-        <h2 id="name">Anil Reddy</h2>
-        <p class="intro">
-          I've always been interested in technology and the way it can be used
-          to make people's lives better. I've been fascinated by the way that
-          computers and software can be used to solve problems and streamline
-          processes. I take real pride in the work that I do, and I'm always
-          striving to do my best. I believe that it's important to be committed
-          to excellence, and I try to bring that mindset to everything I do. I
-          also value teamwork and collaboration, and I enjoy working with others
-          to achieve common goals. I believe that by working together, we can
-          accomplish much more than we can individually.
+    gtag("config", "GT-NGJTQ2CJ");
+  </script>
+</head>
+
+<body>
+  <div id="home">
+    <nav id="nav-menu">
+      <ul id="logo-container">
+        <li><a id="nav-name" href="#home">Kancharla</a></li>
+      </ul>
+      <ul class="nav-menu-items">
+        <li><a class="nav-link home" href="#home">Home</a></li>
+        <li><a class="nav-link about" href="#about">About Me</a></li>
+        <li><a class="nav-link projects" href="#projects">Project</a></li>
+        <li><a class="nav-link skills" href="#skills">Skills</a></li>
+        <li><a class="nav-link contact" href="#contact">Contact</a></li>
+      </ul>
+      <ul>
+        <!-- <button id="nav-resume" class="nav-link resume" onclick="downloadResume()" >Resume</button> -->
+        <button id="resume-button-1" class="nav-link resume" onclick="downloadResume()">
+          Resume
+        </button>
+      </ul>
+    </nav>
+    <div id="mobile-nav-menu">
+      <ul class="mob-nav-menu-items">
+        <li>
+          <a class="nav-link home" href="#about">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill="#5f6368">
+              <path
+                d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
+            </svg>
+            Profile
+          </a>
+        </li>
+        <li>
+          <a class="nav-link projects" href="#projects">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill="#5f6368">
+              <path
+                d="M160-120q-33 0-56.5-23.5T80-200v-440q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v440q0 33-23.5 56.5T800-120H160Zm0-80h640v-440H160v440Zm240-520h160v-80H400v80ZM160-200v-440 440Z" />
+            </svg>
+            Projects
+          </a>
+        </li>
+        <li>
+          <a class="nav-link home" href="#home">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill="#5f6368">
+              <path
+                d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="nav-link skills" href="#skills">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill="#5f6368">
+              <path
+                d="M480-400 40-640l440-240 440 240-440 240Zm0 160L63-467l84-46 333 182 333-182 84 46-417 227Zm0 160L63-307l84-46 333 182 333-182 84 46L480-80Zm0-411 273-149-273-149-273 149 273 149Zm0-149Z" />
+            </svg>
+            Skills
+          </a>
+        </li>
+        <li>
+          <a class="nav-link contact" href="#contact">
+            <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="40px" fill="#5f6368">
+              <path
+                d="M796-120q-119 0-240-55.5T333-333Q231-435 175.5-556T120-796q0-18.86 12.57-31.43T164-840h147.33q14 0 24.34 9.83Q346-820.33 349.33-806l26.62 130.43q2.05 14.9-.62 26.24-2.66 11.33-10.82 19.48L265.67-530q24 41.67 52.5 78.5T381-381.33q35 35.66 73.67 65.5Q493.33-286 536-262.67l94.67-96.66q9.66-10.34 23.26-14.5 13.61-4.17 26.74-2.17L806-349.33q14.67 4 24.33 15.53Q840-322.27 840-308v144q0 18.86-12.57 31.43T796-120ZM233-592l76-76.67-21-104.66H187q3 41.66 13.67 86Q211.33-643 233-592Zm365.33 361.33q40.34 18.34 85.84 29.67 45.5 11.33 89.16 13.67V-288l-100-20.33-75 77.66ZM233-592Zm365.33 361.33Z" />
+            </svg>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div id="home-about">
+      <p>Hello there, I'm</p>
+      <h2 id="name">Anil Reddy</h2>
+      <p class="intro">
+        I've always been interested in technology and the way it can be used
+        to make people's lives better. I've been fascinated by the way that
+        computers and software can be used to solve problems and streamline
+        processes. I take real pride in the work that I do, and I'm always
+        striving to do my best. I believe that it's important to be committed
+        to excellence, and I try to bring that mindset to everything I do. I
+        also value teamwork and collaboration, and I enjoy working with others
+        to achieve common goals. I believe that by working together, we can
+        accomplish much more than we can individually.
+      </p>
+      <a href="#contact"><span>Let's make something amazing</span></a>
+    </div>
+    <video id="video-background" autoplay muted loop>
+      <source src="./Images/1678134221405733.MP4" type="video/mp4" />
+    </video>
+  </div>
+  <div id="about" class="about section">
+    <h1>About me</h1>
+    <p><span>See</span> for yourself</p>
+    <div id="about-container" class="about section">
+      <img id="about-img" class="home-img" src="./Images/me_working.webp" alt="" />
+      <div id="about-info">
+        <p id="user-detail-intro">
+          My expertise in full-stack web development involves designing and
+          implementing innovative concepts using Node Js, Express, coupled
+          with advanced database management, excellent grip on JavaScript and
+          scalable API integrations, resulting in seamless user experiences.
         </p>
-        <a href="#contact"><span>Let's make something amazing</span></a>
-      </div>
-      <video id="video-background" autoplay muted loop>
-        <source src="./Images/1678134221405733.MP4" type="video/mp4" />
-      </video>
-    </div>
-    <div id="about" class="about section">
-      <h1>About me</h1>
-      <p><span>See</span> for yourself</p>
-      <div id="about-container" class="about section">
-        <img
-          id="about-img"
-          class="home-img"
-          src="./Images/me_working.webp"
-          alt=""
-        />
-        <div id="about-info">
-          <p id="user-detail-intro">
-            My expertise in full-stack web development involves designing and
-            implementing innovative concepts using Node Js, Express, coupled
-            with advanced database management, excellent grip on JavaScript and
-            scalable API integrations, resulting in seamless user experiences.
-          </p>
-          <button id="resume-button-2" onclick="downloadResume()">
-            Resume
-          </button>
-        </div>
+        <button id="resume-button-2" onclick="downloadResume()">
+          Resume
+        </button>
       </div>
     </div>
-    <div id="projects">
-      <h1>Performance beats promises.</h1>
-      <p>
-        Bring your <span>creative ideas to life</span> with my expertise in
-        backend and full stack development, ensuring user-friendly and efficient
-        web solutions.
-      </p>
+  </div>
+  <div id="projects">
+    <h1>Performance beats promises.</h1>
+    <p>
+      Bring your <span>creative ideas to life</span> with my expertise in
+      backend and full stack development, ensuring user-friendly and efficient
+      web solutions.
+    </p>
 
-      <div class="project-card">
-        <div class="project-info">
-          <!-- <div class="project-number">01</div> -->
-          <h1 class="project-title">
-            <span class="actual-text">Chick-n-Fry</span>
-          </h1>
-          <p class="project-description">
-            Chick-n-Fry is a fast-food restaurant chain known for its chicken
-            sandwiches, waffle fries, and friendly service. Chick-n-Fry is a
-            popular choice for quick and delicious meals.
-          </p>
-          <div class="project-tech-stack">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>ExpressJS</p>
-            <p>MongoDB</p>
-          </div>
-          <div class="project-source">
-            <a
-              class="project-github-link"
-              href="https://github.com/Smoke221/tangible-voyage-4988"
-              target="_blank"
-              >Source code</a
-            >
-            <a
-              class="project-deployed-link"
-              href="https://timely-parfait-491bed.netlify.app/"
-              target="_blank"
-              >Live here</a
-            >
-          </div>
+    <div class="project-card">
+      <div class="project-info">
+        <!-- <div class="project-number">01</div> -->
+        <h1 class="project-title">
+          <span class="actual-text">Chick-n-Fry</span>
+        </h1>
+        <p class="project-description">
+          Chick-n-Fry is a fast-food restaurant chain known for its chicken
+          sandwiches, waffle fries, and friendly service. Chick-n-Fry is a
+          popular choice for quick and delicious meals.
+        </p>
+        <div class="project-tech-stack">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>ExpressJS</p>
+          <p>MongoDB</p>
         </div>
-        <div id="project-image-coursel">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./Images/index.png" alt="#" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./Images/menu.png" alt="#" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./Images/cart.png" alt="#" />
-              </div>
-            </div>
-          </div>
+        <div class="project-source">
+          <a class="project-github-link" href="https://github.com/Smoke221/tangible-voyage-4988" target="_blank">Source
+            code</a>
+          <a class="project-deployed-link" href="https://timely-parfait-491bed.netlify.app/" target="_blank">Live
+            here</a>
         </div>
       </div>
-      <div class="project-card">
-        <div class="project-info">
-          <h1 class="project-title">
-            <span class="actual-text">Book My Shoot</span>
-          </h1>
-          <p class="project-description">
-            A photographer booking system allows logged-in users to book a shoot
-            with their desired photographer. Enthusiastic and professional
-            photographers can apply to become photographers on our website.
-          </p>
-          <div class="project-tech-stack">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JavaScript</p>
-            <p>Node JS</p>
-            <p>Express JS</p>
-            <p>Mongo DB</p>
-            <p>Redis</p>
-          </div>
-          <div class="project-source">
-            <a
-              class="project-github-link"
-              href="https://github.com/git-rishab/photographer-booking-system"
-              target="_blank"
-              >Source code</a
-            >
-            <a
-              class="project-deployed-link"
-              href="https://bookmyshoot.netlify.app/"
-              target="_blank"
-              >Live here</a
-            >
-          </div>
-        </div>
-        <div id="project-image-coursel">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./Images/index4.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./Images/page4.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./Images/photographer4.png" alt="" />
-              </div>
+      <div id="project-image-coursel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Images/index.png" alt="#" />
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-info">
-          <h1 class="project-title">
-            <span class="actual-text">Analyzy</span>
-          </h1>
-          <p class="project-description">
-            An application designed to read PDFs with the help of AI in a better
-            way allowing users to ask questions about the contents of the file.
-          </p>
-          <div class="project-tech-stack">
-            <p>Vue.js</p>
-            <p>Node JS</p>
-            <p>Express JS</p>
-            <p>JavaScript</p>
-            <p>MongoDB</p>
-            <p>Gemini API</p>
-            <p>AWS S3</p>
-            <p>GCP</p>
-            <p>AI</p>
-          </div>
-          <div class="project-source">
-            <a
-              class="project-github-link"
-              href="https://github.com/Smoke221/Analyzy"
-              target="_blank"
-              >Source code</a
-            >
-            <a
-              class="project-deployed-link"
-              href="https://analyzy.vercel.app/"
-              target="_blank"
-              >Live here</a
-            >
-          </div>
-        </div>
-        <div id="project-image-coursel">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./Images/Analyzy-Home.png" alt="" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./Images/Analyzy-Drag and Drop.png" alt="" />
-              </div>
+            <div class="swiper-slide">
+              <img src="./Images/menu.png" alt="#" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/cart.png" alt="#" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="skills">
-      <h1>Skills</h1>
-      <p>Bringing <span>ideas to life</span> with these tools</p>
-      <div id="container">
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/html-5.svg" alt="" />
-          <h2 class="skills-card-name">HTML</h2>
+    <div class="project-card">
+      <div class="project-info">
+        <h1 class="project-title">
+          <span class="actual-text">Book My Shoot</span>
+        </h1>
+        <p class="project-description">
+          A photographer booking system allows logged-in users to book a shoot
+          with their desired photographer. Enthusiastic and professional
+          photographers can apply to become photographers on our website.
+        </p>
+        <div class="project-tech-stack">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>Node JS</p>
+          <p>Express JS</p>
+          <p>Mongo DB</p>
+          <p>Redis</p>
         </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/css3.svg" alt="" />
-          <h2 class="skills-card-name">CSS</h2>
+        <div class="project-source">
+          <a class="project-github-link" href="https://github.com/git-rishab/photographer-booking-system"
+            target="_blank">Source code</a>
+          <a class="project-deployed-link" href="https://bookmyshoot.netlify.app/" target="_blank">Live here</a>
         </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/javascript.svg" alt="" />
-          <h2 class="skills-card-name">JAVASCRIPT</h2>
-        </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/nodejs.svg" alt="" />
-          <h2 class="skills-card-name">NODE JS</h2>
-        </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/expressj.svg" alt="" />
-          <h2 class="skills-card-name">EXPRESS JS</h2>
-        </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/mongodb.svg" alt="" />
-          <h2 class="skills-card-name">MONGO DB</h2>
-        </div>
-        <div class="skills-card">
-          <img
-            class="skills-card-img"
-            src="./Images/amazon-web-services-4.svg"
-            alt=""
-          />
-          <h2 class="skills-card-name">AWS</h2>
-        </div>
-        <div class="skills-card">
-          <img
-            class="skills-card-img"
-            src="./Images/icons8-my-sql.svg"
-            alt=""
-          />
-          <h2 class="skills-card-name">MY SQL</h2>
-        </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/python.svg" alt="" />
-          <h2 class="skills-card-name">Python</h2>
-        </div>
-        <div class="skills-card">
-          <img class="skills-card-img" src="./Images/dsa.png" alt="" />
-          <h2 class="skills-card-name">DSA</h2>
+      </div>
+      <div id="project-image-coursel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Images/index4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/page4.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/photographer4.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="github">
-      <h1>Github Activity</h1>
-      <p>
-        Showcasing my <span>contributions and active involvement</span> in the
-        developer community
-      </p>
-      <div id="github">
-        <img
-          id="github-stats-card"
-          src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true"
-        />
-        <img
-          id="github-top-langs"
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact"
-          alt=""
-        />
+    <div class="project-card">
+      <div class="project-info">
+        <h1 class="project-title">
+          <span class="actual-text">Analyzy</span>
+        </h1>
+        <p class="project-description">
+          An application designed to read PDFs with the help of AI in a better
+          way allowing users to ask questions about the contents of the file.
+        </p>
+        <div class="project-tech-stack">
+          <p>Vue.js</p>
+          <p>Node JS</p>
+          <p>Express JS</p>
+          <p>JavaScript</p>
+          <p>MongoDB</p>
+          <p>Gemini API</p>
+          <p>AWS S3</p>
+          <p>GCP</p>
+          <p>AI</p>
+        </div>
+        <div class="project-source">
+          <a class="project-github-link" href="https://github.com/Smoke221/Analyzy" target="_blank">Source code</a>
+          <a class="project-deployed-link" href="https://analyzy.vercel.app/" target="_blank">Live here</a>
+        </div>
+      </div>
+      <div id="project-image-coursel">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./Images/Analyzy-Home.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./Images/Analyzy-Drag and Drop.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="skills">
+    <h1>Skills</h1>
+    <p>Bringing <span>ideas to life</span> with these tools</p>
+    <div id="container">
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/html-5.svg" alt="" />
+        <h2 class="skills-card-name">HTML</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/css3.svg" alt="" />
+        <h2 class="skills-card-name">CSS</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/javascript.svg" alt="" />
+        <h2 class="skills-card-name">JAVASCRIPT</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/nodejs.svg" alt="" />
+        <h2 class="skills-card-name">NODE JS</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/expressj.svg" alt="" />
+        <h2 class="skills-card-name">EXPRESS JS</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/mongodb.svg" alt="" />
+        <h2 class="skills-card-name">MONGO DB</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/amazon-web-services-4.svg" alt="" />
+        <h2 class="skills-card-name">AWS</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/icons8-my-sql.svg" alt="" />
+        <h2 class="skills-card-name">MY SQL</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/python.svg" alt="" />
+        <h2 class="skills-card-name">Python</h2>
+      </div>
+      <div class="skills-card">
+        <img class="skills-card-img" src="./Images/dsa.png" alt="" />
+        <h2 class="skills-card-name">DSA</h2>
+      </div>
+    </div>
+  </div>
+  <div class="github">
+    <h1>Github Activity</h1>
+    <p>
+      Showcasing my <span>contributions and active involvement</span> in the
+      developer community
+    </p>
+    <div id="github">
+      <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Smoke221&show_icons=true" />
+      <img id="github-top-langs"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Smoke221&layout=compact" alt="" />
+      <div>
+        <img src="https://ghchart.rshah.org/D1462F/Smoke221" alt="Smoke221's Blue Github Chart" />
+      </div>
+      <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Smoke221" alt="" />
+    </div>
+  </div>
+  <div id="contact">
+    <h1>Connect</h1>
+    <p>Don't be <span>a stranger</span></p>
+    <div id="container-contact">
+      <div id="main-contact">
         <div>
-          <img
-            src="https://ghchart.rshah.org/D1462F/Smoke221"
-            alt="Smoke221's Blue Github Chart"
-          />
+          <img src="./Images/icons8-github.svg" alt="Github logo" />
+          <a id="contact-github" href="https://github.com/Smoke221">Anil</a>
         </div>
-        <img
-          id="github-streak-stats"
-          src="https://github-readme-streak-stats.herokuapp.com/?user=Smoke221"
-          alt=""
-        />
-      </div>
-    </div>
-    <div id="contact">
-      <h1>Connect</h1>
-      <p>Don't be <span>a stranger</span></p>
-      <div id="container-contact">
-        <div id="main-contact">
-          <div>
-            <img src="./Images/icons8-github.svg" alt="Github logo" />
-            <a id="contact-github" href="https://github.com/Smoke221">Anil</a>
-          </div>
-          <div>
-            <img src="./Images/icons8-linkedin.svg" alt="LinkedIn logo" />
-            <a
-              id="contact-linkedin"
-              href="https://www.linkedin.com/in/anil-reddy-b2a364169/"
-              >Kancharla Anil</a
-            >
-          </div>
-          <div>
-            <img src="./Images/icons8-email-30.png" alt="Email logo" />
-            <a id="contact-email" href="mailto:ismoketechlabs@gmail.com"
-              >ismoketechlabs@gmail.com</a
-            >
-          </div>
-          <div>
-            <img src="./Images/icons8-phone-30.png" alt="Phone logo" />
-            <a id="contact-phone" href="tel:+91-8121792408">+91-8121792408</a>
-          </div>
+        <div>
+          <img src="./Images/icons8-linkedin.svg" alt="LinkedIn logo" />
+          <a id="contact-linkedin" href="https://www.linkedin.com/in/anil-reddy-b2a364169/">Kancharla Anil</a>
         </div>
-        <div id="contact-info">
-          <p>
-            I am actively seeking to join a team of talented developers. If you
-            believe that we would work well together, please don't hesitate to
-            contact me via phone or email.
-          </p>
-          <p>
-            With a passion for coding and a strong background in web
-            development, I am eager to contribute my skills and collaborate on
-            innovative projects.
-          </p>
+        <div>
+          <img src="./Images/icons8-email-30.png" alt="Email logo" />
+          <a id="contact-email" href="mailto:ismoketechlabs@gmail.com">ismoketechlabs@gmail.com</a>
+        </div>
+        <div>
+          <img src="./Images/icons8-phone-30.png" alt="Phone logo" />
+          <a id="contact-phone" href="tel:+91-8121792408">+91-8121792408</a>
         </div>
       </div>
+      <div id="contact-info">
+        <p>
+          I am actively seeking to join a team of talented developers. If you
+          believe that we would work well together, please don't hesitate to
+          contact me via phone or email.
+        </p>
+        <p>
+          With a passion for coding and a strong background in web
+          development, I am eager to contribute my skills and collaborate on
+          innovative projects.
+        </p>
+      </div>
     </div>
-    <footer>
-      Created By
-      <a id="footer-name" href="#home"> Anil &copy;</a> 2023 All rights reserved.
-    </footer>
-  </body>
+  </div>
+  <!-- Resume Modal -->
+  <div id="resumeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('resumeModal')"></span>
+      <p>For more details, please check the contact section!</p>
+    </div>
+  </div>
+
+  <!-- First Modal -->
+  <div id="firstModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('firstModal')"></span>
+      <p>Anil is currently working as a backend developer...</p>
+    </div>
+  </div>
+
+  <!-- Second Modal -->
+  <div id="secondModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('secondModal')"></span>
+      <p>He is open to taking on freelance projects.</p>
+    </div>
+  </div>
+</body>
 </html>
 <script src="portfolio.js"></script>

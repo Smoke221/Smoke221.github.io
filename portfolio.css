@@ -11,8 +11,8 @@ a {
   text-decoration: none;
 }
 
-span{
-  color: #D1462F !important;
+span {
+  color: #d1462f !important;
 }
 
 ul > li > a {
@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-scroll {
-  background-color: #D1462F;
+  background-color: #d1462f;
 }
 
 .nav-menu-items {
@@ -52,7 +52,7 @@ nav {
 }
 
 nav > ul:nth-child(3) > li > a {
-  color: #D1462F;
+  color: #d1462f;
   font-size: 20px;
 }
 
@@ -63,7 +63,7 @@ nav > ul:nth-child(3) > li > a {
 
 #resume-button-1,
 #resume-button-2 {
-  background-color: #D1462F;
+  background-color: #d1462f;
   border: none;
   color: white;
   padding: 1rem;
@@ -141,7 +141,7 @@ nav > ul:nth-child(3) > li > a {
 
 #name {
   font-size: 90px;
-  color: #D1462F;
+  color: #d1462f;
 }
 
 #name + p {
@@ -196,7 +196,7 @@ nav > ul:nth-child(3) > li > a {
   border: none;
   color: white;
   padding: 0.3rem;
-  border: 2px solid #D1462F;
+  border: 2px solid #d1462f;
   border-radius: 50px;
   font-size: x-small;
 }
@@ -242,7 +242,7 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .project-info .project-source > a {
-  color: #D1462F;
+  color: #d1462f;
 }
 
 #skills {
@@ -296,10 +296,10 @@ nav > ul:nth-child(3) > li > a {
 
 #main-contact a {
   text-decoration: none;
-  color: #D1462F;
+  color: #d1462f;
 }
 
-.github{
+.github {
   color: white;
   padding: 1rem;
   background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg);
@@ -317,10 +317,10 @@ nav > ul:nth-child(3) > li > a {
 #github img {
   width: 350px;
 }
-#github div{
+#github div {
   background-color: #ffb7aa;
 }
-#github div>img{
+#github div > img {
   width: 500px;
 }
 
@@ -337,7 +337,7 @@ footer > span > a + span {
 }
 
 #footer-name {
-  color: #D1462F;
+  color: #d1462f;
   font-weight: 700;
 }
 
@@ -410,11 +410,11 @@ footer > span > a + span {
     margin-bottom: 1vw;
   }
 
-  #name + p{
+  #name + p {
     font-size: 4vw;
   }
 
-  #name+p+a{
+  #name + p + a {
     font-size: 5vw;
   }
 
@@ -451,7 +451,7 @@ footer > span > a + span {
   #skills > h1,
   #contact > h1,
   #about > h1,
-  .github>h1 {
+  .github > h1 {
     font-size: 12vw;
   }
 
@@ -507,7 +507,71 @@ footer > span > a + span {
   #github-streak-stats {
     width: 90%;
   }
-  #github div>img{
+  #github div > img {
     width: 350px;
   }
+
+  .modal-content {
+    font-size: 11px;
+  }
+  .close-button{
+    float: left;
+  }
+
+  #resumeModal{
+    right: 10%;
+  }
+
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  height: 100%;
+  overflow: auto;
+  background: transparent;
+}
+
+.modal-content {
+  background-color: #ff634789;
+  margin: 15% auto;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  width: max-content;
+  font-weight: bold;
+}
+
+.close-button {
+  color: #000000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 999;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#resumeModal {
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -20%);
+}
+
+#firstModal {
+  top: 10%;
+  left: 50%;
+}
+
+#secondModal {
+  top: 60%;
+  right: 20%;
 }
