@@ -104,12 +104,12 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #home-about .intro {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .intro + a {
   font-size: larger;
-  margin-top: 5%;
+  font-weight: bold;
   font-family: "Caveat", cursive;
 }
 
@@ -204,7 +204,7 @@ nav > ul:nth-child(3) > li > a {
 .swiper {
   width: 40rem;
   height: 25rem;
-  border-radius: 0.625rem;
+  border-radius: 0.3rem;
 }
 
 .swiper-slide > img {
@@ -322,6 +322,14 @@ nav > ul:nth-child(3) > li > a {
 }
 #github div > img {
   width: 500px;
+}
+
+#container-contact{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 footer {
