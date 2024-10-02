@@ -204,7 +204,8 @@ nav {
   }
 
   #name-section {
-    margin-top: 5rem;
+    margin-right: 4rem;
+    /* margin-top: 5rem; */
     width: max-content;
   }
 
