@@ -1,6 +1,8 @@
-body {
+* {
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  /* padding: 0; */
+  box-sizing: border-box;
+  /* font-family: "Outfit", sans-serif; */
 }
 
 html {
@@ -12,12 +14,13 @@ a {
 }
 
 span {
-  color: #d1462f !important;
+  /* font-family: "Satisfy", cursive; */
+  color: #b68d40 !important;
 }
 
 ul > li > a {
   font-size: 19px;
-  color: white;
+  color: #f4ebd0;
 }
 
 ul {
@@ -41,49 +44,54 @@ nav {
 }
 
 .nav-scroll {
-  background-color: #d1462f;
+  background-color: #b68d40;
 }
 
 .nav-menu-items {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: 1.5rem;
+  font-family: "Lora", serif;
+  gap: 5rem;
 }
 
 nav > ul:nth-child(3) > li > a {
-  color: #d1462f;
+  color: #b68d40;
   font-size: 20px;
 }
 
 #nav-name {
   font-size: 30px;
-  font-weight: bolder;
+  font-family: "Outfit", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.right-align{
+  display: flex;
+  gap: 5rem;
 }
 
 #resume-button-1,
 #resume-button-2 {
-  background-color: #d1462f;
+  background-color: #b68d40;
   border: none;
-  color: white;
+  color: #f4ebd0;
   padding: 1rem;
   border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+}
+
+#resume-button-2{
+  margin-top: 30px;
 }
 
 #home {
   position: relative;
   height: 100vh;
-}
-
-#home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  filter: brightness(0.3);
-  z-index: -1;
+  background-color: #122620;
 }
 
 #video-background {
@@ -97,20 +105,89 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #home-about {
-  position: relative;
-  left: 25%;
-  top: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.s1 {
+  margin-top: 10rem;
+  position: sticky;
   width: 60%;
 }
 
-#home-about .intro {
-  font-size: 1.2rem;
+.s1 .swiper-slide img {
+  height: 70vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+#intro {
+  width: 35%;
+  margin-right: 30px;
+}
+
+#intro #name {
+  font-family: 'Playfair Display', serif;
+  font-size: 5vw;
+  color: #b68d40;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#intro p {
+  color: #f4ebd0;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.intro{
+  font-family: "Lora", serif;
 }
 
 .intro + a {
-  font-size: larger;
-  font-weight: bold;
-  font-family: "Caveat", cursive;
+  font-family: "Satisfy", cursive;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .s1 .swiper-slide img {
+    height: 30vh;
+    object-fit: cover;
+    width: 100%;
+  }
+  #home-about {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .s1{
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  #intro {
+    width: 100%;
+    margin: 0;
+  }
+
+  #intro{
+    padding: 1rem;
+  }
+
+  #intro #name {
+    font-size: 2.5rem;
+  }
+
+  .intro+a{
+    font-size: 1rem;
+  }
+}
+
+#about{
+  background-color: #f4ebd0;
 }
 
 #about-container {
@@ -136,25 +213,11 @@ nav > ul:nth-child(3) > li > a {
 }
 
 #home-about > p {
-  color: white;
-}
-
-#name {
-  font-size: 90px;
-  color: #d1462f;
-}
-
-#name + p {
-  color: white;
-  font-size: 24px;
-}
-
-#name + p + a {
-  font-size: 1.5vw;
+  color: #f4ebd0;
 }
 
 #projects {
-  color: white;
+  color: #f4ebd0;
   position: relative;
   padding: 1rem;
 }
@@ -166,8 +229,9 @@ nav > ul:nth-child(3) > li > a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg);
-  filter: brightness(0.3);
+  /* background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg); */
+  background-color: #122620;
+  /* filter: brightness(0.3); */
   z-index: -1;
 }
 
@@ -183,8 +247,12 @@ nav > ul:nth-child(3) > li > a {
   padding: 20px;
   width: 30vw;
 }
+.project-description{
+  margin-top: 10px;
+}
 
 .project-tech-stack {
+  margin-top: 20px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -192,11 +260,11 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .project-tech-stack > p {
-  /* background-color: #D1462F; */
+  /* background-color: #b68d40; */
   border: none;
-  color: white;
+  color: #f4ebd0;
   padding: 0.3rem;
-  border: 2px solid #d1462f;
+  border: 2px solid #b68d40;
   border-radius: 50px;
   font-size: x-small;
 }
@@ -217,9 +285,11 @@ nav > ul:nth-child(3) > li > a {
 #contact > h1,
 #about > h1,
 .github > h1 {
+  padding: 30px 0px;
   text-align: center;
   font-size: 70px;
   margin-bottom: 0;
+  font-family: "Outfit", sans-serif;
 }
 
 #projects > p,
@@ -230,11 +300,12 @@ nav > ul:nth-child(3) > li > a {
 #about > p {
   text-align: center;
   font-size: larger;
-  font-family: "Caveat", cursive;
+  font-family: "Satisfy", cursive;
 }
 
 .project-source {
   display: flex;
+  margin-top: 10px;
   gap: 2rem;
   font-size: larger;
   font-weight: bolder;
@@ -242,10 +313,11 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .project-info .project-source > a {
-  color: #d1462f;
+  color: #b68d40;
 }
 
 #skills {
+  background-color: #f4ebd0;
   padding: 2rem;
 }
 
@@ -259,6 +331,7 @@ nav > ul:nth-child(3) > li > a {
 }
 
 .skills-card {
+  font-family: "Outfit", sans-serif;
   text-align: center;
   margin: 10px;
 }
@@ -268,11 +341,16 @@ nav > ul:nth-child(3) > li > a {
   height: 100px;
 }
 
+#contact{
+  background-color: #f4ebd0;
+}
+
 #container-contact {
   display: flex;
   align-items: start;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: "Lora", serif;
 }
 
 #contact-info {
@@ -296,13 +374,14 @@ nav > ul:nth-child(3) > li > a {
 
 #main-contact a {
   text-decoration: none;
-  color: #d1462f;
+  color: #b68d40;
 }
 
 .github {
-  color: white;
+  color: #f4ebd0;
   padding: 1rem;
-  background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg);
+  /* background-image: url(https://i.pinimg.com/236x/cd/29/c9/cd29c93ddfab585a34a7657db8dce484.jpg); */
+  background-color: #122620;
 }
 
 #github {
@@ -318,7 +397,7 @@ nav > ul:nth-child(3) > li > a {
   width: 350px;
 }
 #github div {
-  background-color: #ffb7aa;
+  background-color: #d6ad60;
 }
 #github div > img {
   width: 500px;
@@ -341,11 +420,11 @@ footer {
 
 footer > span,
 footer > span > a + span {
-  color: white;
+  color: #f4ebd0;
 }
 
 #footer-name {
-  color: #d1462f;
+  color: #b68d40;
   font-weight: 700;
 }
 
@@ -367,20 +446,21 @@ footer > span > a + span {
   }
 
   #mobile-nav-menu {
-    background-color: #151212;
+    background-color: #122620;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    font-family: "Poppins", sans-serif;
     align-items: center;
     z-index: 2;
   }
 
   .mob-nav-menu-items {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 1rem;
   }
 
@@ -388,15 +468,16 @@ footer > span > a + span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* color: inherit; */
+    gap: 0.5rem;
+    color: #d6ad60;
     padding: 10px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 600;
     transition: background-color 0.3s;
   }
 
   .mob-nav-menu-items a:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0e6;
     color: inherit;
   }
 
@@ -404,33 +485,8 @@ footer > span > a + span {
     display: none;
   }
 
-  #home-about {
-    left: 10%;
-    width: 80%;
-  }
-
-  #home-about .intro {
-    font-size: 3vw;
-  }
-
-  #name {
-    font-size: 10vw;
-    margin-bottom: 1vw;
-  }
-
-  #name + p {
-    font-size: 4vw;
-  }
-
-  #name + p + a {
-    font-size: 5vw;
-  }
-
-  #home-about > p {
-    font-size: 5vw;
-  }
-
   #contact-info {
+    padding: 0;
     width: 64%;
     font-size: 1rem;
   }
@@ -451,6 +507,7 @@ footer > span > a + span {
   }
 
   #user-detail-intro {
+    font-family: "Lora", serif;
     font-size: 3vw;
     text-align: start;
   }

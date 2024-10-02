@@ -1,18 +1,25 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".s1", {
   loop: true,
-  autoplayDisableOnInteraction: true,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   effect: "creative",
   creativeEffect: {
     prev: {
       shadow: true,
-      translate: [0, 0, -400],
+      translate: ["-120%", 0, -500],
+      // rotate: [0, 100, 0],
     },
     next: {
-      translate: ["100%", 0, 0],
+      opacity: 1,
+      scale: 1.1,
     },
   },
-  autoplay: {
-    delay: 5000,
+  autoplayDisableOnInteraction: false,
+  speed: 1000,
+  fadeEffect: {
+    crossFade: true,
   },
 });
 
@@ -28,8 +35,8 @@ window.addEventListener("scroll", function () {
     navResume.style.border = "2px solid white";
   } else {
     navbar.classList.remove("nav-scroll");
-    navName.style.color = "#D1462F";
-    spanElement.style.color = "#D1462F";
+    navName.style.color = "#b68d40";
+    spanElement.style.color = "#b68d40";
     navResume.style.border = "none";
   }
 });
@@ -81,18 +88,18 @@ function downloadResume() {
 
   // Set a timeout for the second modal
   setTimeout(() => {
-    closeModal('firstModal');
+    closeModal("firstModal");
     document.getElementById("secondModal").style.display = "block";
   }, 2000);
 
   // Set a timeout for the resume modal
   setTimeout(() => {
-    closeModal('secondModal');
+    closeModal("secondModal");
     document.getElementById("resumeModal").style.display = "block";
-    
+
     // Set a timeout to automatically close the resume modal
     setTimeout(() => {
-      closeModal('resumeModal');
+      closeModal("resumeModal");
     }, 3000); // Close after 3 seconds
   }, 4000); // Show last modal after 4 seconds
 }
@@ -100,3 +107,5 @@ function downloadResume() {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
+
+//intro swiper
