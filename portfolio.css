@@ -106,6 +106,84 @@ nav {
   padding-top: 65px;
 }
 
+/* --s: 25vmin;
+--p: calc(var(--s) / 2);
+--c1: #122620;
+--c2: #b68d40;
+--c3: #f4ebd0;
+--bg: var(--c3);
+--d: 4000ms;
+--e: cubic-bezier(0.76, 0, 0.24, 1);
+
+background-color: var(--bg);
+background-image:
+  linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+  linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+  linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+  linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+background-size: var(--s) var(--s);
+background-position: 
+  calc(var(--p) *  1) calc(var(--p) *  0), 
+  calc(var(--p) * -1) calc(var(--p) *  1), 
+  calc(var(--p) *  1) calc(var(--p) * -1), 
+  calc(var(--p) * -1) calc(var(--p) *  0);
+animation: 
+  color var(--d) var(--e) infinite,
+  position var(--d) var(--e) infinite;
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+} */
+
 /* #video-background {
   position: absolute;
   top: -2.5%;
@@ -667,5 +745,125 @@ footer > span > a + span {
 
   #resumeModal {
     right: 10%;
+  }
+}
+
+
+.line {
+  position: absolute;
+  width: 1px; /* Thinner line for rain effect */
+  height: 100%;
+  top: 0;
+  left: 50%;
+  /* background: rgba(255, 255, 255, 0.1); */
+  overflow: hidden;
+  animation: drop 3s linear infinite;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 20vh; /* Height of the rain drop */
+  width: 100%;
+  top: -100%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
+  -webkit-animation: drop 7s 0s infinite;
+          animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  left: 10%;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+}
+
+.line:nth-child(2) {
+  left: 20%;
+  animation-duration: 2.5s;
+  animation-delay: 0.8s;
+}
+
+.line:nth-child(3) {
+  left: 30%;
+  animation-duration: 3s;
+  animation-delay: 1.2s;
+}
+
+.line:nth-child(4) {
+  left: 40%;
+  animation-duration: 2.7s;
+  animation-delay: 0.7s;
+}
+
+.line:nth-child(5) {
+  left: 50%;
+  animation-duration: 3.2s;
+  animation-delay: 1.5s;
+}
+
+.line:nth-child(6) {
+  left: 60%;
+  animation-duration: 2.9s;
+  animation-delay: 0.3s;
+}
+
+.line:nth-child(7) {
+  left: 70%;
+  animation-duration: 3.1s;
+  animation-delay: 1.1s;
+}
+
+.line:nth-child(8) {
+  left: 80%;
+  animation-duration: 2.4s;
+  animation-delay: 0.9s;
+}
+
+.line:nth-child(9) {
+  left: 90%;
+  animation-duration: 3s;
+  animation-delay: 0.6s;
+}
+
+.line:nth-child(10) {
+  left: 95%;
+  animation-duration: 2.7s;
+  animation-delay: 0.75s;
+}
+
+.line:nth-child(11) {
+  left: 95%;
+  animation-duration: 2.7s;
+  animation-delay: 1.3s;
+}
+
+.line:nth-child(12) {
+  left: 95%;
+  animation-duration: 2.7s;
+  animation-delay: 1.0s;
+}
+.line:nth-child(13) {
+  left: 95%;
+  animation-duration: 2.7s;
+  animation-delay: 1.4s;
+}
+.line:nth-child(14) {
+  left: 95%;
+  animation-duration: 2.7s;
+  animation-delay: 1.7s;
+}
+
+@keyframes drop {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
   }
 }
