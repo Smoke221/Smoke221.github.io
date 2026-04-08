@@ -1,0 +1,60 @@
+.dashboard {
+  max-width: var(--section-max);
+  margin-inline: auto;
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  background: var(--color-bg-elevated);
+  border: var(--border-subtle-dark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: clamp(1rem, 3vw, 1.75rem);
+  margin-top: 0;
+}
+
+.grid > img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  border-radius: var(--radius-sm);
+  background: #fff;
+}
+
+.chartWrap {
+  background: transparent;
+  padding: 0;
+}
+
+.chartWrap img {
+  width: 100%;
+  max-width: min(100%, 520px);
+  height: auto;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+
+.calendarHost {
+  width: 100%;
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: var(--border-subtle-dark);
+}
+
+@media (max-width: 550px) {
+  .dashboard {
+    padding: 1rem;
+  }
+
+  .grid > img,
+  .chartWrap img {
+    max-width: 100%;
+  }
+}

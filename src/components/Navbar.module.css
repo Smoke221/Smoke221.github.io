@@ -1,0 +1,134 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-h);
+  padding-inline: var(--section-pad);
+  max-width: 100%;
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease;
+  background-color: rgba(15, 26, 22, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: var(--border-subtle-dark);
+  z-index: 1000;
+}
+
+.scrolled {
+  background-color: rgba(182, 141, 64, 0.97);
+  border-bottom-color: transparent;
+  box-shadow: var(--shadow-sm);
+}
+
+.logoList {
+  display: flex;
+  align-items: center;
+}
+
+.wordmark {
+  font-size: clamp(1rem, 0.92rem + 0.35vw, 1.125rem);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  color: var(--color-accent-soft);
+  transition: color 0.3s ease;
+}
+
+.scrolled .wordmark {
+  color: #fff;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.menuList {
+  display: flex;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.link {
+  color: var(--color-text-on-dark);
+  font-size: clamp(0.875rem, 0.82rem + 0.2vw, 0.9375rem);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.35rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.25s ease;
+}
+
+.link:hover::after,
+.link:focus-visible::after {
+  width: 100%;
+}
+
+.scrolled .link {
+  color: #122620;
+}
+
+.scrolled .link:hover {
+  color: #0f1a16;
+}
+
+.resumeBtn {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.55rem 1.15rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: var(--color-accent);
+  color: #122620;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.resumeBtn:hover {
+  background: var(--color-accent-soft);
+}
+
+.scrolled .resumeBtn {
+  background: transparent;
+  color: #122620;
+  border-color: #122620;
+}
+
+.scrolled .resumeBtn:hover {
+  background: rgba(18, 38, 32, 0.08);
+}
+
+@media (max-width: 768px) {
+  .menuList {
+    display: none;
+  }
+
+  .root {
+    padding-inline: 1rem;
+  }
+}

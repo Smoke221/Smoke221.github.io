@@ -1,0 +1,122 @@
+.card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr);
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+  max-width: var(--section-max);
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 3rem) var(--section-pad);
+  border-bottom: var(--border-subtle-dark);
+}
+
+.card:last-of-type {
+  border-bottom: none;
+}
+
+.reverse .info {
+  order: 2;
+}
+
+.reverse .media {
+  order: 1;
+}
+
+.info {
+  padding: 0;
+  width: 100%;
+  max-width: 32rem;
+}
+
+.projectTitle {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: clamp(1.35rem, 1.1rem + 1vw, 1.75rem);
+  letter-spacing: -0.02em;
+  color: var(--color-text-on-dark);
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-family: var(--font-serif);
+  font-size: clamp(0.98rem, 0.94rem + 0.2vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  margin-top: 0;
+}
+
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  font-family: var(--font-sans);
+}
+
+.tech > span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(182, 141, 64, 0.45);
+  color: var(--color-accent-soft);
+  background: rgba(182, 141, 64, 0.08);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.links a {
+  color: var(--color-accent-soft);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.links a:hover {
+  border-bottom-color: currentColor;
+}
+
+.media {
+  min-width: 0;
+}
+
+/* Swiper requires global class "swiper" on root */
+.swiperRoot {
+  width: 100%;
+  max-width: 40rem;
+  height: clamp(14rem, 50vw, 25rem);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.swiperRoot :global(.swiper-slide) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .reverse .info,
+  .reverse .media {
+    order: unset;
+  }
+
+  .swiperRoot {
+    max-width: 100%;
+    height: 58vw;
+    max-height: 20rem;
+    pointer-events: auto;
+  }
+}
