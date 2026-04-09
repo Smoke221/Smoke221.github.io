@@ -1,12 +1,23 @@
 export const projects = [
   {
-    title: "Chick-n-Fry",
+    title: "Chitram",
     description:
-      "Chick-n-Fry is a fast-food restaurant chain known for its chicken sandwiches, waffle fries, and friendly service. Chick-n-Fry is a popular choice for quick and delicious meals.",
-    tech: ["HTML", "CSS", "JavaScript", "ExpressJS", "MongoDB"],
-    github: "https://github.com/Smoke221/tangible-voyage-4988",
-    live: "https://timely-parfait-491bed.netlify.app/",
-    images: ["/Images/index.png", "/Images/menu.png", "/Images/cart.png"],
+      "A social platform for India’s movie community—discuss Bollywood, Hollywood, and indie cinema, join contests, explore titles, and keep a watchlist with spoiler-smart discussions and a cinematic feed. Built for scale with a modern cloud stack; Android release is in active development alongside the web experience at thechitram.in.",
+    tech: [
+      "Node.js",
+      "Redis",
+      "MySQL",
+      "MongoDB",
+      "Firebase",
+      "AWS EC2",
+      "AWS S3",
+      "AWS Lambda",
+      "Email service",
+      "Google sign-in",
+    ],
+    github: null,
+    live: "https://thechitram.in/",
+    images: [],
   },
   {
     title: "MG Classic Interiors",

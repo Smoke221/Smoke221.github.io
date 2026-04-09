@@ -4,6 +4,12 @@ import sec from "../styles/section.module.css";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
+  if (!projects.length) {
+    return null;
+  }
+
+  const [featured, ...rest] = projects;
+
   return (
     <section id="projects" className={`${sec.section} ${styles.root}`}>
       <header className={styles.header}>
@@ -13,13 +19,19 @@ export default function Projects() {
           full-stack builds that stay usable as they grow.
         </p>
       </header>
-      {projects.map((project, index) => (
-        <ProjectCard
-          key={project.title}
-          project={project}
-          reversed={index % 2 === 1}
-        />
-      ))}
+
+      <div className={styles.layout}>
+        {featured ? (
+          <ProjectCard project={featured} variant="featured" />
+        ) : null}
+        {rest.length > 0 ? (
+          <div className={styles.grid}>
+            {rest.map((project) => (
+              <ProjectCard key={project.title} project={project} variant="card" />
+            ))}
+          </div>
+        ) : null}
+      </div>
     </section>
   );
 }

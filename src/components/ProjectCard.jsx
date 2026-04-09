@@ -1,61 +1,68 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCreative } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-creative";
 import styles from "./ProjectCard.module.css";
 
-export default function ProjectCard({ project, reversed }) {
+export default function ProjectCard({ project, variant }) {
+  const cover = project.images?.[0];
+  const extraShots = Math.max(0, (project.images?.length ?? 0) - 1);
+
   return (
     <article
-      className={`${styles.card}${reversed ? ` ${styles.reverse}` : ""}`}
+      className={
+        variant === "featured"
+          ? `${styles.article} ${styles.featured}`
+          : `${styles.article} ${styles.card}`
+      }
     >
-      <div className={styles.info}>
-        <h3 className={styles.projectTitle}>{project.title}</h3>
-        <p className={styles.description}>{project.description}</p>
-        <div className={styles.tech}>
-          {project.tech.map((t) => (
-            <span key={t}>{t}</span>
-          ))}
-        </div>
-        <div className={styles.links}>
-          {project.github ? (
-            <a href={project.github} target="_blank" rel="noreferrer">
-              Source code
-            </a>
-          ) : null}
-          <a href={project.live} target="_blank" rel="noreferrer">
-            Live site
-          </a>
-        </div>
-      </div>
       <div className={styles.media}>
-        <Swiper
-          className={`swiper ${styles.swiperRoot}`}
-          modules={[Autoplay, EffectCreative]}
-          loop
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          effect="creative"
-          creativeEffect={{
-            prev: {
-              shadow: true,
-              translate: ["-120%", 0, -500],
-            },
-            next: {
-              opacity: 1,
-              scale: 1.1,
-            },
-          }}
-          speed={1000}
-        >
-          {project.images.map((src, i) => (
-            <SwiperSlide key={src}>
-              <img src={src} alt={`${project.title} screenshot ${i + 1}`} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {cover ? (
+          <img
+            src={cover}
+            alt={`${project.title} preview`}
+            className={styles.cover}
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className={styles.coverPlaceholder} aria-hidden />
+        )}
+        {extraShots > 0 ? (
+          <span className={styles.shotBadge}>+{extraShots} in project</span>
+        ) : null}
+      </div>
+
+      <div className={styles.body}>
+        <h3 className={styles.title}>{project.title}</h3>
+        <p className={styles.description}>{project.description}</p>
+
+        <div className={styles.meta}>
+          <ul className={styles.tech} aria-label="Tech stack">
+            {project.tech.map((t) => (
+              <li key={t}>
+                <span className={styles.techPill}>{t}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div className={styles.actions}>
+            <a
+              className={styles.btnPrimary}
+              href={project.live}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View live
+            </a>
+            {project.github ? (
+              <a
+                className={styles.btnSecondary}
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Source
+              </a>
+            ) : null}
+          </div>
+        </div>
       </div>
     </article>
   );
