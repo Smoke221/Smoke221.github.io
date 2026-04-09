@@ -5,7 +5,6 @@ import Home from "./components/Home.jsx";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Skills from "./components/Skills.jsx";
-import GithubSection from "./components/GithubSection.jsx";
 import Contact from "./components/Contact.jsx";
 import ResumeModals from "./components/ResumeModals.jsx";
 
@@ -64,11 +63,12 @@ export default function App() {
       <Navbar scrolled={navScrolled} onResumeClick={downloadResume} />
       <MobileNav />
       <Home />
-      <About onResumeClick={downloadResume} />
-      <Projects />
-      <Skills />
-      <GithubSection />
-      <Contact />
+      <main className="page-sections">
+        <About onResumeClick={downloadResume} />
+        <Projects />
+        <Skills />
+        <Contact />
+      </main>
       <ResumeModals stage={resumeStage} onClose={closeResumeFlow} />
     </>
   );

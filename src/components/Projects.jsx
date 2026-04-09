@@ -1,10 +1,11 @@
 import { projects } from "../data/projects.js";
 import ProjectCard from "./ProjectCard.jsx";
+import sec from "../styles/section.module.css";
 import styles from "./Projects.module.css";
 
 export default function Projects() {
   return (
-    <section id="projects" className={styles.root}>
+    <section id="projects" className={`${sec.section} ${styles.root}`}>
       <header className={styles.header}>
         <h2 className={styles.title}>Selected work</h2>
         <p className={styles.subtitle}>

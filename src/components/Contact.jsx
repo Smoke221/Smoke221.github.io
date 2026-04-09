@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className={`${sec.section} ${sec.cream}`}>
+    <section id="contact" className={sec.section}>
       <div className={sec.inner}>
         <header className={sec.header}>
           <h2 className={sec.title}>Connect</h2>
@@ -27,21 +27,21 @@ export default function Contact() {
               <img src="/Images/linkedin.svg" alt="" />
               <a
                 id="contact-linkedin"
-                href="https://www.linkedin.com/in/anil-reddy-b2a364169/"
+                href="https://www.linkedin.com/in/anilkancharla2/"
               >
                 Kancharla Anil
               </a>
             </div>
             <div className={styles.row}>
               <img src="/Images/mail.svg" alt="" />
-              <a id="contact-email" href="mailto:ismoketechlabs@gmail.com">
-                ismoketechlabs@gmail.com
+              <a id="contact-email" href="mailto:kanilreddy867@gmail.com">
+                kanilreddy867@gmail.com
               </a>
             </div>
             <div className={styles.row}>
               <img src="/Images/whatsapp.svg" alt="" />
-              <a id="contact-phone" href="tel:+91-8121792408">
-                +91-8121792408
+              <a id="contact-phone" href="tel:+91-7995125254">
+                +91-7995125254
               </a>
             </div>
           </nav>

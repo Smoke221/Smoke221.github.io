@@ -1,15 +1,5 @@
 .root {
-  position: relative;
-  padding-block: var(--section-y);
   padding-inline: 0;
-}
-
-.root::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: var(--color-bg-dark-mid);
-  z-index: -1;
 }
 
 .header {

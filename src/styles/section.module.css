@@ -31,20 +31,4 @@
   padding-block: var(--section-y);
 }
 
-.cream {
-  background: var(--color-cream);
-  color: var(--color-text-on-cream);
-}
-
-.cream .subtitle {
-  color: var(--color-text-on-cream-muted);
-}
-
-.dark {
-  background: var(--color-bg-dark-mid);
-  color: var(--color-text-on-dark);
-}
-
-.dark .subtitle {
-  color: var(--color-text-muted);
-}
+/* Surfaces (cream / dark) are applied in global.css via .page-sections > section:nth-child(...) */

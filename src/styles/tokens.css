@@ -21,7 +21,7 @@
   --radius-pill: 9999px;
   --nav-h: 4rem;
   --shadow-sm: 0 1px 3px rgba(15, 26, 22, 0.08);
-  --shadow-md: 0 16px 48px rgba(15, 26, 22, 0.14);
+  --shadow-md: 0 16px 48px #0f1a1624;
   --border-subtle: 1px solid rgba(182, 141, 64, 0.22);
   --border-subtle-dark: 1px solid rgba(242, 237, 228, 0.12);
 }

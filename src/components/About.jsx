@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 export default function About({ onResumeClick }) {
   return (
-    <section id="about" className={`${sec.section} ${sec.cream}`}>
+    <section id="about" className={sec.section}>
       <div className={sec.inner}>
         <header className={sec.header}>
           <h2 className={sec.title}>About</h2>

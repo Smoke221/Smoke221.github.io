@@ -4,7 +4,7 @@ import styles from "./Skills.module.css";
 
 export default function Skills() {
   return (
-    <section id="skills" className={`${sec.section} ${sec.cream}`}>
+    <section id="skills" className={sec.section}>
       <div className={sec.inner}>
         <header className={sec.header}>
           <h2 className={sec.title}>Skills &amp; tools</h2>
