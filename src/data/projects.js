@@ -17,7 +17,9 @@ export const projects = [
     ],
     github: null,
     live: "https://thechitram.in/",
-    images: [],
+    images: [
+      "/Images/chitram-hero.png",
+    ],
   },
   {
     title: "MG Classic Interiors",
