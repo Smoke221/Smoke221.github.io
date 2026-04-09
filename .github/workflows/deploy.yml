@@ -1,3 +1,8 @@
+# Publishes the Vite `dist/` folder only. Required repo setting:
+# Settings → Pages → Build and deployment → Source: **GitHub Actions**
+# If Source is "Deploy from a branch" (e.g. main / root), the live site serves
+# the raw repo (index.html → /src/main.jsx), causing MIME errors and no /assets/ bundle.
+
 name: Deploy site to GitHub Pages
 
 on:
